@@ -15,7 +15,6 @@
     width: auto;
     background-color: white solid;
     height: 134px;
-    /* margin: auto; */
 }
 
 .topBar{
@@ -50,18 +49,31 @@
     /* display: inline-block; */
 }
 
-.section-right{
-    display: inline-block;
-    border: 2px solid red;
-    height: 420px;
-    width: 864px;
+.content-left{
     position: absolute;
-    right: 0;
-}
-.section-left{
-    display: inline-block;
     border: 2px solid red;
     height: 420px;
-    width: 864px;
-    position: absolute;    
+    width: 640px;
+    left: 223px;
+}
+.content-right {
+    position: absolute;
+    border: 2px solid red;
+    height: 420px;
+    width: 640px;
+    right: 223px;
+}
+
+.main{
+    height: 3030px;
+    border: 2px solid red;
+    width: 1280px;
+    margin: auto;
+}
+
+.footer{
+    height: 492px;
+    width :1728px;
+    background-color: #111827;
+    margin:auto;
 }
