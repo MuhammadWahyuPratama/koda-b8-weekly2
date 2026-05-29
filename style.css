@@ -17,13 +17,50 @@
     height: 134px;
 }
 
+/* Top Bar  */
+
 .topBar{
     background-color: #1A73E8;
     width: 1728px;
     height: 28px;
     margin:auto;
+    color: #FFFFFF;
+    position: relative;
 }
 
+.topBar-left{
+    display: inline-block;
+    width: 156px;
+    height: 16px;
+    position: absolute;
+    font-size: 11px;
+    left:228px;
+    bottom: 6px;
+}
+
+.topBar-left img{
+    width: 18px;
+    height: 11px;
+    position: relative;
+    bottom: -1px;
+}
+
+.topBar-right{
+    display: inline-block;
+    width: 410px;
+    height: 16px;
+    position: absolute;
+    font-size: 12px;
+    right: 228px;
+    bottom: 7px;
+}
+.topBar-right span{
+    padding-left: 16px;
+}
+
+/* Top Bar End */
+
+/* Navbar 1 */
 .navbar1{
     /* background-color:red; */
     height: 65px;
@@ -31,6 +68,9 @@
     width: 1280px;
     border: 1px solid red;
 }
+/* Navbar 1 End */
+
+/* Navbar 2 */
 
 .navbar2{
     /* background-color:yellow; */
@@ -39,6 +79,9 @@
     margin: auto;
     border: 1px solid red;
 }
+/* Navbar 2 End */
+
+/* Section  */
 .section{
     border: 1px solid red;
     height: 420px;
@@ -51,29 +94,51 @@
 
 .content-left{
     position: absolute;
-    border: 2px solid red;
+    border: 1px solid red;
     height: 420px;
     width: 640px;
     left: 223px;
 }
 .content-right {
     position: absolute;
-    border: 2px solid red;
+    border: 1px solid red;
     height: 420px;
     width: 640px;
     right: 223px;
 }
 
+/* Section Ed */
+
+/* Main */
+
 .main{
-    height: 3030px;
-    border: 2px solid red;
+    height: 3303px;
+    border: 1px solid black;
     width: 1280px;
     margin: auto;
 }
+
+/* Main End */
 
 .footer{
     height: 492px;
     width :1728px;
     background-color: #111827;
     margin:auto;
+}
+
+.first-footer{
+    height: 105px;
+    border: 1px solid red;
+}
+
+.second-footer{
+    height:338px ;
+    border: 1px solid red;
+}
+
+
+.third-footer{
+    height: 49px;
+    border:1px solid red;
 }
