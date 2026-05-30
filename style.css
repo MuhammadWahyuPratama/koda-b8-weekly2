@@ -63,11 +63,9 @@
 
 /* Navbar 1 */
 .navbar1{
-    /* background-color:red; */
     height: 65px;
     margin: auto;
     width: 1280px;
-    border: 1px solid red;
     position: relative;
     padding-left: 16px;
     padding-right: 16px;
@@ -110,8 +108,7 @@
     font-size: 16px;
     padding-left: 40px;
     padding-top: 6px;
-    /* width: 80px; */
-    /* height: 24px; */
+    color: #111827;
 }
 
 .navbar-mid {
@@ -119,9 +116,9 @@
     background-color: #f3f4f6;
     width: 526px;
     height: 42px;
+    border: 1px solid #0000001A ;
     color:#6b7280 ;
-    /* border: 1px solid red; */
-    padding-top: 11.5px;
+    padding-top: 9.5px;
     padding-right: 16px;
     padding-left: 16px;
     padding-bottom: 11.5px;
@@ -165,7 +162,6 @@
 }
 .navbar-right{
     display: inline-block;
-    /* background-color: yellow; */
     width: 210px;
     height: 40px;
     position: relative;
@@ -175,7 +171,6 @@
 .icon1{
     position: absolute;
     display: inline-block;
-    /* border: 1px solid red; */
     width: 40px;
     height: 40px;
     padding: 10px;
@@ -185,7 +180,6 @@
 .icon2{
     position: absolute;
     display: inline-block;
-    /* border: 1px solid red; */
     width:78px;
     height: 40px;
     padding: 10px;
@@ -195,15 +189,12 @@
 .ic{
     position: relative;
     display: inline-block;
-    /* border: 1px solid red; */
     width: 20px;
     height: 20px;
-    /* padding: 10px; */
 }
 .on{
     position: absolute;
     display: inline-block;
-    /* border: 1px solid red; */
     width: 30px;
     height: 20px;
     left:45px;
@@ -213,7 +204,6 @@
 .icon3{
     position: absolute;
     display: inline-block;
-    /* border: 1px solid red; */
     width: 40px;
     height: 40px;
     padding: 10px;
@@ -222,7 +212,6 @@
 .icon4{
     position: absolute;
     display: inline-block;
-    /* border: 1px solid red; */
     width: 40px;
     height: 40px;
     padding: 10px;
@@ -234,13 +223,78 @@
 /* Navbar 2 */
 
 .navbar2{
-    /* background-color:yellow; */
     position:relative;
     height: 41px;
     width: 1280px;
     margin: auto;
-    border: 1px solid red;
+    font-size: 14px;
+    color: #6B7280;
+    padding-left: 16px;
+    border-top: 1px solid #0000001A ;
+
 }
+
+.icon-nav1{
+    display: inline-block;
+    width: 171px;
+    height: 40px;
+    bottom: 2px;
+    position: relative;
+    padding: 10px;
+    color: #111827;
+}
+
+.icon-nav1 img{
+    width: 14px;
+    height: 14px;
+    top: 2px;
+    position: relative;
+}
+
+.icon-nav2{
+    display: inline-block;
+    width: 117px;
+    height: 40px;
+    padding: 10px;
+}
+.icon-nav3{
+    display: inline-block;
+    width: 104px;
+    height: 40px;
+    padding: 10px;
+}
+.icon-nav4{
+    display: inline-block;
+    width: 155px ;
+    height: 40px;
+    padding: 10px;
+}
+.icon-nav5{
+    display: inline-block;
+    width: 125px;
+    height:40px ;
+    padding: 10px;
+}
+.icon-nav6{
+    display: inline-block;
+    width: 112px;
+    height: 40px;
+    padding: 10px;
+}
+.icon-nav7{
+    display: inline-block;
+    width: 162px;
+    height: 40px;
+    padding: 10px;
+}
+.icon-nav8{
+    display: inline-block;
+    width: 93px ;
+    height: 40px ;
+    padding: 10px;
+    color: #DC2626;
+}
+
 /* Navbar 2 End */
 
 /* Section  */
