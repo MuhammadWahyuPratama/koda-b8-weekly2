@@ -345,7 +345,6 @@
     position: absolute;
     top:10px;
     right: 8px;
-
 }
 .s-mid{
     position: absolute;
@@ -471,6 +470,8 @@
     width: 1280px;
     margin: auto;
 }
+
+/* Kategori */
 
 .main-real{
     position: absolute;
@@ -834,6 +835,299 @@
     font-weight: 400px;
     color: #6B7280;
 }
+/* Kategori End */
+
+/* Main Flash Deal */
+
+.main-flash{
+    position: absolute;
+    top: 842px;
+    width: 1280px;
+    height: 475px;
+}
+
+.flash-deal{
+    position: absolute;
+    display: inline-block;
+    width: 1248px;
+    height: 32px;
+    left: 16px;
+}
+
+.flash{
+    position: absolute;
+    top: 0px;
+    width: 366.99px;
+    height: 32px;
+    /* border: 1px solid red; */
+}
+.flash-red{
+    position: absolute;
+    top:-2px;
+    width: 117px;
+    height: 32px;
+    background-color: #DC2626;
+    border-radius: 8px;
+    -webkit-border-radius: 8px;
+    -moz-border-radius: 8px;
+    -ms-border-radius: 8px;
+    -o-border-radius: 8px;
+}
+.flash-red span{
+    position: absolute;
+    top: 6px;
+    left: 36px;
+    right: 12px;
+    width: 69px;
+    height: 20px;
+    font-size: 14px;
+    color: #FFFFFF;
+}
+.flash-red img{
+    position: absolute;
+    width: 16px;
+    height: 16px;
+    top: 8px;
+    bottom: 8px;
+    left: 12px;
+    right: 89px;
+}
+
+.flash-jam{
+    position: absolute;
+    top: 2px;
+    bottom: 4px;
+    left: 129px;
+    right: 0px;
+    width: 237.99px;
+    height: 24px;
+    /* border: 1px solid red; */
+
+}
+.flash-jam img{
+    position: absolute;
+    width: 14px;
+    height: 14px;
+    top: 5px;
+    bottom: 5px;
+    left: 0px;
+
+}
+.flash-jam span{
+    font-size: 14px;
+    display: inline-block;
+    position: absolute;
+    right: 0px;
+    top: 4px;
+    bottom:2px;
+    left: 20px;
+}
+.cart-flash{
+    position: absolute;
+    width: 1248px;
+    height: 419.25px;
+    /* border: 1px solid red; */
+    bottom: 0px;
+    left: 16px;
+}
+
+.cart-flash1{
+    position: absolute;
+    width: 300px;
+    height: 420px;
+    left: 0px;
+    background-color: #F3F4F6;
+    border-radius: 12px;
+    -webkit-border-radius: 12px;
+    -moz-border-radius: 12px;
+    -ms-border-radius: 12px;
+    -o-border-radius: 12px;
+}
+.cart-flash2{
+    position: absolute;
+    width: 300px;
+    /* border: 1px solid red; */
+    height: 420px;
+    left: 316px;
+    background-color: #F3F4F6;
+    border-radius: 12px;
+    -webkit-border-radius: 12px;
+    -moz-border-radius: 12px;
+    -ms-border-radius: 12px;
+    -o-border-radius: 12px;
+
+}
+.cart-flash3{
+    position: absolute;
+    width: 300px;
+    background-color: #F3F4F6;
+    height: 420px;
+    right: 316px;
+    border-radius: 12px;
+    -webkit-border-radius: 12px;
+    -moz-border-radius: 12px;
+    -ms-border-radius: 12px;
+    -o-border-radius: 12px;
+
+}
+.cart-flash4{
+    position: absolute;
+    width: 300px;
+    height: 420px;
+    right: 0px;
+    background-color: #F3F4F6;
+    border-radius: 12px;
+    -webkit-border-radius: 12px;
+    -moz-border-radius: 12px;
+    -ms-border-radius: 12px;
+    -o-border-radius: 12px;
+}
+.cart-flash1 img{
+    width: 298px;
+    height: 298px;
+    border-radius: 12px;
+    -webkit-border-radius: 12px;
+    -moz-border-radius: 12px;
+    -ms-border-radius: 12px;
+    -o-border-radius: 12px;
+}
+.cart-flash2 img{
+    width: 298px;
+    height: 298px;
+    border-radius: 12px;
+    -webkit-border-radius: 12px;
+    -moz-border-radius: 12px;
+    -ms-border-radius: 12px;
+    -o-border-radius: 12px;
+}
+.cart-flash3 img{
+    width: 298px;
+    height: 298px;
+    border-radius: 12px;
+    -webkit-border-radius: 12px;
+    -moz-border-radius: 12px;
+    -ms-border-radius: 12px;
+    -o-border-radius: 12px;
+}
+.cart-flash4 img{
+    width: 298px;
+    height: 298px;
+    border-radius: 12px;
+    -webkit-border-radius: 12px;
+    -moz-border-radius: 12px;
+    -ms-border-radius: 12px;
+    -o-border-radius: 12px;
+}
+
+.sound{
+    position: absolute;
+    left: 12px;
+    bottom: 92px;
+    width: 274px;
+    height: 16px;
+    color: #6B7280;
+}
+.headphone{
+    width: 274px;
+    height: 20px;
+    position: absolute;
+    color: #111827;
+    left: 12px;
+    bottom: 68px;
+    top: 330px;
+    font-size: 14px;
+}
+.flash1-star{
+    width: 274px;
+    height: 20px;
+    position: absolute;
+    font-size: 14px;
+    color: #6B7280;
+    left: 12px;
+    bottom: 44px;
+}
+.k-star{
+    display: inline;
+    width: 80px;
+    height: 12px;
+    top: 0px;
+    bottom: 4px;
+    left: 0px;
+    position: absolute;
+
+}
+.k-star img{
+    width: 12px;
+    height: 12px;
+}
+
+.k-price{
+    font-size: 14px;
+    position: absolute;
+    width: 59px;
+    height: 20px;
+    left: 84px;
+    right: 151px;
+    top: 0px;
+}
+
+.flash-price{
+    width: 274px;
+    height: 28px;
+    position: absolute;
+    bottom: 12px;
+    left: 12px;
+    right: 12px;
+
+}
+
+.pri1{
+    position: absolute;
+    width: 92px;
+    height: 24px;
+    left: 0px;
+    bottom: 0px;
+    font-size: 16px;
+    color: #1A73E8;
+    font-weight: 600;
+
+}
+.pri2{
+    position: absolute;
+    width: 66px;
+    height: 16px;
+    top: 8px;
+    font-size: 11px;
+    color: #6B7280;
+    text-decoration: line-through;
+    left: 108px;
+}
+.pri3{
+    position: absolute;
+    width: 107px;
+    height: 24px;
+    left: 0px;
+    bottom: 0px;
+    font-size: 16px;
+    color: #1A73E8;
+    font-weight: 600;
+}
+.pri4{
+    position: absolute;
+    width: 77px;
+    height: 16px;
+    top: 8px;
+    font-size: 11px;
+    color: #6B7280;
+    text-decoration: line-through;
+    left: 115px;
+}
+
+
+
+
+
+/* Main Flash Deal End */
 
 
 
