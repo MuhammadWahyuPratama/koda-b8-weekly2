@@ -967,7 +967,6 @@
 .cart-flash2{
     position: absolute;
     width: 300px;
-    /* border: 1px solid red; */
     height: 420px;
     left: 316px;
     background-color: #F3F4F6;
@@ -976,7 +975,6 @@
     -moz-border-radius: 12px;
     -ms-border-radius: 12px;
     -o-border-radius: 12px;
-
 }
 .cart-flash3{
     position: absolute;
@@ -989,7 +987,6 @@
     -moz-border-radius: 12px;
     -ms-border-radius: 12px;
     -o-border-radius: 12px;
-
 }
 .cart-flash4{
     position: absolute;
@@ -1156,13 +1153,11 @@
     right: 16px;
     width:1248px;
     height: 176px;
-    /* border: 1px solid red; */
 }
 .hero-diskon{
     position: absolute;
     width: 616px;
     height: 176px;
-    /* border: 1px solid red; */
     border-radius: 16px;
     -webkit-border-radius: 16px;
     -moz-border-radius: 16px;
@@ -1176,8 +1171,6 @@
     left: 24px;
     width: 152px;
     height: 86px;
-    /* border: 1px solid red; */
-
 }
 
 .hero-diskon img{
@@ -1240,7 +1233,6 @@
     right: 0px;
     width: 616px;
     height: 176px;
-    /* border: 1px solid red; */
     border-radius: 16px;
     -webkit-border-radius: 16px;
     -moz-border-radius: 16px;
@@ -1263,7 +1255,6 @@
     left: 24px;
     width: 137px;
     height: 86px;
-    /* border: 1px solid red; */
 }
 .ele1{
     width: 137px;
@@ -1298,8 +1289,6 @@
     left: 20px;
 
 }
-
-
 /* Section Hero End */
 
 /* Section Cart */
@@ -1308,20 +1297,17 @@
     width: 1280px;
     height: 908px;
     top: 1035.25px;
-    /* border: 1px solid red; */
 }
 .section-cart1{
     position: relative;
     width: 1280px;
     height: 918px;
     top: 1083.25px;
-    /* border: 1px solid red; */
 }
 .produk-new{
     position: absolute;
     width: 1248px;
     height: 30px;
-    /* border: 1px solid red ; */
     left: 16px;
 }
 .produk-new img{
@@ -1353,7 +1339,6 @@
     height: 20px;
     right: 0px;
     top: 5px;
-    /* border: 1px solid red; */
 }
 .produk-new1 span{
     color: #1A73E8;
@@ -1382,7 +1367,6 @@
 }
 .section-akhir1{
     left: 32px;
-    /* border: 1px solid red; */
     bottom: 179px;
     top: 32px;
     position: absolute;
@@ -1393,7 +1377,6 @@
     font-weight: 500;
     font-size: 20px;
     color: #111827;
-    /* border: 1px solid red; */
     left: 448px;
     position: absolute;
     width:286px;
@@ -1401,7 +1384,6 @@
 }
 .section-akhir2{
     bottom: 32px;
-    /* border: 1px solid red; */
     position: absolute;
     width: 1182px;
     height: 115px;
@@ -1492,7 +1474,6 @@
 
 }
 .akhir2-1{
-    /* border: 1px solid red; */
     position: absolute;
     left: 0px;
     width: 277.5px ;
@@ -1500,7 +1481,6 @@
 
 }
 .akhir2-2{
-    /* border: 1px solid red; */
     left: 301.5px;
     position: absolute;
     width: 277.5px;
@@ -1509,7 +1489,6 @@
 
 }
 .akhir2-3{
-    /* border: 1px solid red; */
     right: 301.5px;
     position: absolute;
     width: 277.5px;
@@ -1518,7 +1497,6 @@
 
 }
 .akhir2-4{
-    /* border: 1px solid red; */
     right: 0px;
     position: absolute;
     width: 277.5px;
@@ -1540,7 +1518,6 @@
 
 .first-footer{
     height: 105px;
-    border: 1px solid red;
 }
 .footer1{
     width: 1280px;
@@ -1618,7 +1595,6 @@
 }
 .second-footer{
     height:338px ;
-    border: 1px solid red;
 
 }
 .second-footer-1{
@@ -1944,5 +1920,51 @@
 
 .third-footer{
     height: 49px;
+}
+.endfooter{
+    width: 1280px;
+    height: 48px;
+    position: absolute;
+    left: 224px;
+}
+.endfooter-1{
+    width: 273px;
+    height: 16px;
+    position: absolute;
+    left: 16px;
+    top: 16px;
+    color: #6A7282;
+    font-size: 11px;
+}
+.endfooter-2{
+    height: 16px;
+    position: absolute;
+    right: 16px;
+    top: 16px;
+    width:273px;
+    color: #6A7282;
+}
+.endfooter-2-1{
+    width: 96px;
+    height: 16px;
+    position: absolute;
+    left: 0px;
+    font-size: 11px;
+
+}
+.endfooter-2-2{
+    width: 109px;
+    height: 16px;
+    position: absolute;
+    left: 112px;
+    font-size: 11px;
+}
+.endfooter-2-3{
+    width: 36px;
+    height: 16px;
+    position: absolute;
+    font-size: 11px;
+    right: 0px;
+    
 }
 
