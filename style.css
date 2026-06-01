@@ -15,6 +15,9 @@
     width: auto;
     background-color: white solid;
     height: 134px;
+    position: sticky;
+    top: 0%;
+    /* border: 1px solid red; */
 }
 
 /* Top Bar  */
@@ -25,8 +28,11 @@
     height: 28px;
     margin:auto;
     color: #FFFFFF;
-    position: relative;
+    position: sticky;
+    top: 0px;
+    z-index: 999;
     /* left: 16px; */
+    /* border: 1px solid blue; */
 }
 
 .topBar-left{
@@ -63,10 +69,12 @@
 
 /* Navbar 1 */
 .navbar1{
+    /* border: 1px solid blue; */
     height: 65px;
     margin: auto;
     width: 1280px;
-    position: relative;
+    position: sticky;
+    top: 28px;
     padding-left: 16px;
     padding-right: 16px;
 }
@@ -223,7 +231,8 @@
 /* Navbar 2 */
 
 .navbar2{
-    position:relative;
+    /* position:sticky; */
+    /* top: 92px;/ */
     height: 41px;
     width: 1280px;
     margin: auto;
@@ -231,6 +240,8 @@
     color: #6B7280;
     padding-left: 16px;
     border-top: 1px solid #0000001A ;
+    /* border: 1px solid blue; */
+
 
 }
 
@@ -465,7 +476,7 @@
 /* Main */
 
 .main{
-    height: 3303px;
+    height: 3903px;
     border: 1px solid black;
     width: 1280px;
     margin: auto;
@@ -508,6 +519,18 @@
     /* display: inline-block; */
     right: 0px;
     width: 100px;
+    top:5px;
+    height: 20px;
+    font-size: 14px;
+    font-weight: 400;
+    color: #1A73E8;
+}
+.main-firs2{
+    /* border: 1px solid red; */
+    position: absolute;
+    /* display: inline-block; */
+    right: -882px;
+    width: 110px;
     top:5px;
     height: 20px;
     font-size: 14px;
@@ -846,6 +869,19 @@
     height: 475px;
 }
 
+.mainflash-copy{
+    position: absolute;
+    top: 0px;
+    width: 1280px;
+    height: 475px;
+}
+.mainflash-copy1{
+    position: absolute;
+    top: 435px;
+    width: 1280px;
+    height: 475px;
+}
+
 .flash-deal{
     position: absolute;
     display: inline-block;
@@ -1021,6 +1057,7 @@
 
 .sound{
     position: absolute;
+    font-size: 12px;
     left: 12px;
     bottom: 92px;
     width: 274px;
@@ -1123,21 +1160,237 @@
     left: 115px;
 }
 
-
-
-
-
 /* Main Flash Deal End */
 
+/* Section Hero */
 
+.section-hero{
+    position: absolute;
+    top: 551px;
+    left: 16px;
+    right: 16px;
+    width:1248px;
+    height: 176px;
+    /* border: 1px solid red; */
+}
+.hero-diskon{
+    position: absolute;
+    width: 616px;
+    height: 176px;
+    /* border: 1px solid red; */
+    border-radius: 16px;
+    -webkit-border-radius: 16px;
+    -moz-border-radius: 16px;
+    -ms-border-radius: 16px;
+    -o-border-radius: 16px;
+}
+
+.fashion-wanita{
+    position: absolute;
+    top: 45px;
+    left: 24px;
+    width: 152px;
+    height: 86px;
+    /* border: 1px solid red; */
+
+}
+
+.hero-diskon img{
+    border-radius: 16px;
+    -webkit-border-radius: 16px;
+    -moz-border-radius: 16px;
+    -ms-border-radius: 16px;
+    -o-border-radius: 16px;
+}
+.wanita1{
+    position: absolute;
+    width: 152px;
+    height: 20px;
+    top: 0px;
+}
+.wanita1 span{
+    position: absolute;
+    left: 0px;
+    width: 101px;
+    height: 20px;
+    font-size: 14px;
+    color: #FFFFFFCC;
+}
+.wanita2{
+    width: 152px;
+    height: 36px;
+
+}
+.wanita2 span{
+    position: absolute;
+    width: 152px;
+    height: 28px;
+    top: 20px;
+    font-size: 20px;
+    font-style: Bold;
+    font-weight: 700;
+    color: #FFFFFF;
+}
+.wanita3{
+    position: absolute;
+    top: 56px;
+    width: 141px;
+    height: 30px;
+    border: 1px solid white;
+    border-radius: 8px;
+    -webkit-border-radius: 8px;
+    -moz-border-radius: 8px;
+    -ms-border-radius: 8px;
+    -o-border-radius: 8px;
+}
+.wanita3 span{
+    position: relative;
+    color: #FFFFFF;
+    top: 0px;
+    font-size: 12px;
+    left: 20px;
+}
+.hero-baik{
+    position: absolute;
+    right: 0px;
+    width: 616px;
+    height: 176px;
+    /* border: 1px solid red; */
+    border-radius: 16px;
+    -webkit-border-radius: 16px;
+    -moz-border-radius: 16px;
+    -ms-border-radius: 16px;
+    -o-border-radius: 16px;
+
+}
+.hero-baik img{
+    background-image: linear-gradient(#8200DB , #4F39F6);
+    border-radius: 16px;
+    -webkit-border-radius: 16px;
+    -moz-border-radius: 16px;
+    -ms-border-radius: 16px;
+    -o-border-radius: 16px;
+}
+
+.elektronik-pilihan{
+    position: absolute;
+    top: 45px;
+    left: 24px;
+    width: 137px;
+    height: 86px;
+    /* border: 1px solid red; */
+}
+.ele1{
+    width: 137px;
+    height: 20px;
+    color: #FFFFFFCC;
+    font-size: 14px;
+}
+.ele2{
+    width: 137px;
+    height: 36px;
+    color: #FFFFFF;
+    font-weight: 700;
+    font-style: Bold;
+    font-size: 20px;
+
+}
+.ele3{
+    width: 110px;
+    height: 30px;
+    border: 1px solid white;
+    border-radius: 8px;
+    -webkit-border-radius: 8px;
+    -moz-border-radius: 8px;
+    -ms-border-radius: 8px;
+    -o-border-radius: 8px;
+}
+.ele3 span{
+    position: relative;
+    color: #FFFFFF;
+    top: 1px;
+    font-size: 12px;
+    left: 20px;
+
+}
+
+
+/* Section Hero End */
+
+/* Section Cart */
+.section-cart{
+    position: relative;
+    width: 1280px;
+    height: 908px;
+    top: 1035.25px;
+    /* border: 1px solid red; */
+}
+.section-cart1{
+    position: relative;
+    width: 1280px;
+    height: 918px;
+    top: 1083.25px;
+    /* border: 1px solid red; */
+}
+.produk-new{
+    position: absolute;
+    width: 1248px;
+    height: 30px;
+    /* border: 1px solid red ; */
+    left: 16px;
+}
+.produk-new img{
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    top: 5px;
+}
+
+.produk-new span{
+    position: absolute;
+    width: 148px;
+    height: 30px;
+    font-size:18px ;
+    color: #111827;
+    left: 28px;
+}
+.produk-new19 span{
+    position: absolute;
+    width: 148px;
+    height: 30px;
+    font-size:18px ;
+    color: #111827;
+    left: 28px;
+}
+.produk-new1{
+    position: absolute;
+    width: 140px;
+    height: 20px;
+    right: 0px;
+    top: 5px;
+    /* border: 1px solid red; */
+}
+.produk-new1 span{
+    color: #1A73E8;
+    font-size: 14px;
+    top: 0px;
+}
+.produk-new1 img{
+    position: absolute;
+    right: 0px;
+    top: 1px;
+}
+/* Section Cart End */
 
 /* Main End */
 
 .footer{
+    position: relative;
     height: 492px;
     width :1728px;
     background-color: #111827;
     margin:auto;
+    top: 3909px;
 }
 
 .first-footer{
@@ -1148,11 +1401,13 @@
 .second-footer{
     height:338px ;
     border: 1px solid red;
+
 }
 
 
 .third-footer{
     height: 49px;
     border:1px solid red;
+
 }
 
