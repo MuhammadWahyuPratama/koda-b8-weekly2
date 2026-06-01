@@ -487,22 +487,16 @@
     position: absolute;
     margin-top: 48px;
     height: 192px;
-    /* border: 1px solid red; */
     width: 1280px;
 }
 
 .main-first{
     position: absolute;
-    /* border: 1px solid red; */
     width: 1248px;
     left: 16px;
     height: 30px;
-    /* border: 1px solid red; */
-    /* margin-left:16px ;
-    margin-right: 16px; */
 }
 .main-first1{
-    /* border: 1px solid red; */
     position: absolute; 
     display: inline-block;
     width: 282px;
@@ -513,9 +507,7 @@
     /* left: 16px; */
 }
 .main-first2{
-    /* border: 1px solid red; */
     position: absolute;
-    /* display: inline-block; */
     right: 0px;
     width: 100px;
     top:5px;
@@ -525,9 +517,7 @@
     color: #1A73E8;
 }
 .main-firs2{
-    /* border: 1px solid red; */
     position: absolute;
-    /* display: inline-block; */
     right: -882px;
     width: 110px;
     top:5px;
@@ -549,7 +539,6 @@
     position: relative;
     top: 54px;
     left:16px;
-    /* border: 1px solid red; */
 }
 .main-second1{
     position: absolute;
@@ -894,7 +883,6 @@
     top: 0px;
     width: 366.99px;
     height: 32px;
-    /* border: 1px solid red; */
 }
 .flash-red{
     position: absolute;
@@ -936,7 +924,6 @@
     right: 0px;
     width: 237.99px;
     height: 24px;
-    /* border: 1px solid red; */
 
 }
 .flash-jam img{
@@ -961,7 +948,6 @@
     position: absolute;
     width: 1248px;
     height: 419.25px;
-    /* border: 1px solid red; */
     bottom: 0px;
     left: 16px;
 }
