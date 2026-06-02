@@ -82,11 +82,9 @@
 .navbar-left{
     position: relative;
     display: inline-block;
-    /* background-color: green; */
     width: 120px;
     height: 32px;
     font-size: 14px;
-    /* padding-top: 10px; */
     
 }
 .b{
@@ -310,7 +308,6 @@
 
 /* Section  */
 .section{
-    border: 2px solid green;
     height: 420px;
     margin: auto;
     width: 1728px;
@@ -857,6 +854,29 @@
     height: 475px;
 }
 
+.diskon-flash{
+    top: 8px;
+    left: 8px;
+    width: 45px;
+    height: 24px;
+    position: absolute;
+    background-color: #DC2626;
+    border-radius: 16777200px;
+    -webkit-border-radius: 16777200px;
+    -moz-border-radius: 16777200px;
+    -ms-border-radius: 16777200px;
+    -o-border-radius: 16777200px;
+}
+.diskon-flash span{
+    width: 29px;
+    height: 16px;
+    position: absolute;
+    font-size: 12px;
+    color: #FFFFFF;
+    left: 8px;
+    top: 4px;
+}
+
 .mainflash-copy{
     position: absolute;
     top: 0px;
@@ -1352,6 +1372,7 @@
 }
 
 .section-akhir{
+    margin: auto;
     left: 728px;
     color: #FFFFFF;
     top: 3502px;
