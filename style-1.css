@@ -1105,7 +1105,6 @@ header{
     color: #111827;
     font-size: 24px;
     font-weight: 500;
-    border: 1px solid red;
     margin: 32px auto;
 }
 .bungkus-belanja{
@@ -1114,6 +1113,7 @@ header{
     border: 1px solid red;
     margin: auto;
     margin-top: 32px;
+    display: flex;
 }
 .cart-left{
     width: 821px;
@@ -1122,6 +1122,7 @@ header{
     display: flex;
     flex-direction: column;
     gap:16px;
+    margin-bottom:16px;
     border-radius: 16px;
     -webkit-border-radius: 16px;
     -moz-border-radius: 16px;
@@ -1151,7 +1152,6 @@ header{
 .cart-left1-2{
     width: 667px;
     height: 103px;
-    border: 1px solid red;
     display: flex;
     gap: 7.8px;
     flex-direction: column;
@@ -1183,11 +1183,19 @@ header{
 .cart-left1-25{
     font-size: 16px;
     display: flex;
+    align-items: center;
+    text-align: center;
     justify-content: space-around;
     width: 117px;
     height: 28px;
     border: 1px solid #0000001A;
     border-radius: 16px;
+}
+.cart-left1-25 span{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
 }
 .cart-left1-25 button{
     background: transparent;
@@ -1203,23 +1211,28 @@ header{
     font-weight: 500;
     display: flex;
     gap :4px;
-    /* justify-content: center; */
-    /* text-align: center; */
     align-items: center;
 }
 .cart-left1-27 img{
     width:12px;
     height: 12px;
 }
-
+.cart-left2-1{
+    display: flex;
+    gap: 8px;
+    padding-left: 20px;
+    align-items: center;
+    padding-bottom:8px;
+}
 .cart-left2-1 img{
     width:16px;
     height: 16px;
 }
 .cart-left2{
-    padding-top:;
+    padding-top: 16px;
     display: flex;
     gap: 8px;
+    margin-top: 16px;
     flex-direction: column;
     background-color: #FFFFFF;
     border: 1px solid #0000001A;
@@ -1263,5 +1276,85 @@ header{
 .cart-left2-3{
     color: #6B7280;
     font-size: 12px;
+    display: flex;
+    padding-left: 20px;
+    padding-top: 8px;
 
+}
+.cart-right{
+    width: 394px;
+    height: 309px;
+    margin-left: 32px;
+    padding:20px ;
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
+    border: 1px solid #0000001A;
+    border-radius: 16px;
+     gap: 20px;
+     color:#FFFFFF
+}
+.cart-right1-1{
+    color:#111827;
+    font-size: 18px;
+    font-weight: 500;
+    
+}
+.cart-right1{
+    display:flex;
+    gap:8px;
+    flex-direction: column;
+}
+.cart-right1-2{
+    display: flex;
+    justify-content: space-between;
+    color: #6B7280;
+    font-size: 14px;
+}
+.cart-right1-3{
+    display: flex;
+    justify-content: space-between;
+}
+.cart-right1-4{
+    color:#111827;
+    font-size: 14px;
+}
+.cart-right1-5{
+    color: #1A73E8;
+    font-size: 14px;
+    font-weight: 700;
+}
+.hijau{
+    color:#00A63E;
+    font-size: 14px;
+}
+.checkout{
+    padding-left:20px;
+    margin-top: 16px;
+    width:352px;
+    height: 52px;
+    border-radius:12px ;
+    background-color: #F97316;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+.checkout button{
+    font-size: 16px;
+    background:transparent;
+    color:#FFFFFF;
+    border:transparent;
+}
+.cart-right1-6{
+    color:#6B7280;
+    font-size: 12px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+.kamusuka{
+    margin-top:32px;
 }
