@@ -1839,3 +1839,221 @@ header{
     font-size: 12px;
     font-weight: 400;
 }
+
+/* Auth forgot End */
+
+/* CheckOut Start */
+
+.checkout1{
+    max-width: 1152px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid red;
+    margin: 134px auto;
+    flex-direction: column;
+}
+.checkout-step{
+    display:flex;
+    justify-content:center;
+    align-items:flex-start;
+    gap:20px;
+    margin-top: 32px;
+    margin-bottom:40px;
+    border: 1px solid red;
+}
+
+.step{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align:center;
+    align-items: center;
+    font-size: 12px;
+}
+
+.circle1{
+    width:40px;
+    height:40px;
+    border-radius:50%;
+    background-color: #E5E7EB;
+    color:#6B7280;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    font-weight:400;
+    font-size: 12px;
+}
+
+.active .circle1{
+    background:#1A73E8;
+    color:#FFFFFF;
+}
+
+.step p{
+    margin-top:8px;
+    font-size:14px;
+    color:#6B7280;
+}
+.step a{
+    color:#1A73E8;
+    margin-top:8px;
+    font-size:14px;
+}
+
+.line1{
+    width:120px;
+    height:2px;
+    /* background:#e5e7eb; */
+    margin-top:20px;
+}
+.checkout-left{
+    display:grid;
+    grid-template-columns:2fr 1fr;
+    gap:32px;
+}
+.checkout-left2{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    /* align-items: center; */
+    border:1px solid red;
+    gap:16px;
+}
+.form-full{
+    grid-column: span 2;
+}
+.checkout-right{
+    border: 1px solid red;
+}
+.form-checkout{
+    color:#6B7280;
+    font-size: 14px;
+    font-weight: 500;
+}
+.form-checkout input{
+    color:#111827;
+    font-size: 14px;
+    border-color: #F3F4F6;
+    border: 1px solid #0000001A;
+    background-color: #F3F4F6;
+    border-radius: 12px;
+    height: 46px;
+    width: 100%;
+    box-sizing: border-box;
+    
+}
+.checkout-deliver{
+    /* border: 1px solid #F8F9FA; */
+    border: 2px solid #1A73E8;
+    border-radius: 12px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #EFF6FF;
+}
+.checkout-deliver input{
+    background-color: #1A73E8;
+}
+.checkout-deliver3{
+    padding-right: 11.5px;
+    padding-top: 11.5px;
+}
+.checkout-deliver h1{
+    color:#111827;
+    font-size: 18px;
+    font-weight: 500;
+}
+.checkout-deliver p{
+    color:#111827;
+    font-size: 14px;
+    font-weight: 500;
+    display: flex;
+    justify-content: start;
+    /* border: 1px solid red; */
+
+}
+.checkout-deliver a{
+    color:#6B7280;
+    font-size: 12px;
+    font-weight: 500;
+
+}
+.checkout-deliver4{
+    color: #00A63E;
+    font-size: 14px;
+    font-weight: 500;
+    padding-left: 11.5px;
+    padding-top: 11.5px;
+}
+.checkout-deliver1{
+    display: flex;
+    justify-content: space-between;
+}
+.checkout-deliver2{
+    width:562px;
+}
+.metode{
+    color:#111827;
+    font-size: 18px;
+    margin-bottom: 12px;
+}
+
+
+.checkout-deliver-second{
+    border: 2px solid #0000001A;
+    border-radius: 12px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #EFF6FF;
+    margin-top:12px;
+}
+.checkout-deliver-second h1{
+    color:#111827;
+    font-size: 18px;
+    font-weight: 500;
+}
+.checkout-deliver-second p{
+    color:#111827;
+    font-size: 14px;
+    font-weight: 500;
+    display: flex;
+    justify-content: start;
+    /* border: 1px solid red; */
+
+}
+.checkout-deliver-second a{
+    color:#6B7280;
+    font-size: 12px;
+    font-weight: 500;
+
+}
+.checkout-right{
+    display: flex;
+    flex-direction: column;
+    /* justify-content: space-between; */
+}
+.checkout-right img{
+    width: 40px;
+    height: 40px;
+}
+.checkout-right1{
+    display: flex;
+    justify-content: space-between;
+}
+.checkout-right2{
+    display: flex;
+    justify-content: space-between;
+}
+.checkout-right3{
+    display: flex;
+    justify-content: space-between;
+
+}
+.checkout-right1{
+    display: flex;
+    justify-content: space-between;
+}
