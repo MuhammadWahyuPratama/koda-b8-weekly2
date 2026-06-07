@@ -1890,6 +1890,9 @@ header{
     background:#1A73E8;
     color:#FFFFFF;
 }
+.green .circle1{
+    background:#00C950;
+}
 
 .step p{
     margin-top:8px;
@@ -1919,8 +1922,7 @@ header{
     border-radius: 12px;
     border: 1px solid #0000001A;
     background-color: #FFFFFF;
-    padding-left: 24px;
-    padding-right:24px;
+    padding:24px;
 }
 .checkout-left2{
     display: grid;
@@ -2123,4 +2125,107 @@ header{
     height: 16px;
 }
 
+/* Checkout End */
 
+/* Checkout Step 2 Start */
+
+.checkout-step1{
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    gap:32px;
+}
+
+/* Checkout Step 2 End */
+
+.step-metode img{
+    width: 20px;
+    height: 20px;
+}
+.step-metode{
+    color: #111827;
+    font-size: 20px;
+    font-weight: 500;
+}
+
+.checkout-step2{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    gap: 12px;
+}
+
+.step-pembayaran{
+    background-color: #EFF6FF;
+    border: 2px solid #1A73E8;
+    border-radius: 12px;
+    font-size: 12px;
+    display: flex;
+    height: 56px;
+    align-items: center;
+    color: #111827;
+}
+.step-pembayaran1{
+    background-color: #FFFFFF;
+    border: 2px solid #0000001A;
+    border-radius: 12px;
+    font-size: 12px;
+    display: flex;
+    justify-content: start;
+    height: 56px;
+    align-items: center;
+    color: #111827;
+}
+.step-pembayaran2{
+    background-color: #EFF6FF;
+    border: 1px solid #DBEAFE;
+    border-radius: 12px;
+    color: #6B7280;
+    font-size: 12px;
+    font-weight: 400;
+    height: 42px;
+    display: flex;
+    /* justify-content: center; */
+    align-items: center;
+}
+.step-pembayaran2 img{
+    width: 16px;
+    height: 16px;
+    padding-right: 8px;
+}
+.step-button{
+    display: grid;
+    grid-template-columns: 1fr 5fr;
+    gap: 12px;
+}
+.button-back{
+    height: 48px;
+    border: 1px solid #0000001A;
+    background-color: #FFFFFF;
+    font-size: 14px;
+    font-weight: 500;
+    display: flex;
+    border-radius: 12px;
+    justify-content: center;
+    
+}
+.button-back button{
+    color: #6B7280;
+    border: none;
+    background-color: transparent;
+}
+.button-konfirmasi{
+    background-color: #1A73E8;
+    border-radius: 12px;
+    font-size: 16px;
+    font-weight: 500;
+    display: flex;
+    justify-content: center;
+}
+.button-konfirmasi button{
+    color: #FFFFFF;
+    border: none;
+    background-color: transparent;
+}
+.button-konfirmasi img{
+    width:16px;
+    height: 16px;
+}
