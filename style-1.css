@@ -2047,8 +2047,8 @@ header{
     background-color: #FFFFFF;
     border: 1px solid #0000001A;
     border-radius: 16px;
-    padding-left: 20px;
-    padding-right: 20px;
+    padding: 0px 20px
+    
 }
 .checkout1-right h1{
     color:#111827;
@@ -2134,9 +2134,6 @@ header{
     grid-template-columns: 2fr 1fr;
     gap:32px;
 }
-
-/* Checkout Step 2 End */
-
 .step-metode img{
     width: 20px;
     height: 20px;
@@ -2183,13 +2180,16 @@ header{
     font-weight: 400;
     height: 42px;
     display: flex;
-    /* justify-content: center; */
     align-items: center;
 }
 .step-pembayaran2 img{
-    width: 16px;
-    height: 16px;
+    width: 20px;
+    height: 20px;
     padding-right: 8px;
+}
+.step-pembayaran2 p{
+    color: #6B7280;
+    font-size: 12px;
 }
 .step-button{
     display: grid;
@@ -2229,3 +2229,80 @@ header{
     width:16px;
     height: 16px;
 }
+
+/* Checkout Step 2 End */
+
+/* Checkout Step 3 Start */
+
+.step3-checkout{
+    display: flex;
+    gap: 16px;
+    flex-direction: column;
+    
+}
+.step4-checkout{
+    background-color: #E5E7EB4D;
+    border-radius: 12px;
+    justify-content: center;
+    align-items: start;
+    padding-bottom: 4px;
+    padding-top: 16px;
+    padding-left: 16px;
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+.step4-checkout h1{
+    color:#111827;
+    font-size: 14px;
+    font-weight: 400;
+    
+}
+.step4-checkout p{
+    color: #6B7280;
+    font-size: 14px;
+    font-weight: 400;
+}
+.step5-checkout {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.step5-checkout h1{
+    width: 100%;
+    margin-right:315px;
+}
+.step5-checkout img{
+    width: 48px;
+    height: 48px;
+    border-radius: 12px;
+}
+.step5-checkout span{
+    color: #1A73E8;
+    font-size: 14px;
+    width: 78px;
+}
+
+.button-pay{
+    background-color: #F97316;
+    border-radius: 12px;
+    font-size: 16px;
+    font-weight: 500;
+    display: flex;
+    justify-content: center;
+}
+.button-pay button{
+    color: #FFFFFF;
+    border: none;
+    background-color: transparent;
+}
+.button-pay img{
+    width:16px;
+    height: 16px;
+}
+
+
+
+
+/* Checkout Step 3 End */
