@@ -2630,6 +2630,12 @@ header {
   font-size: 14px;
   font-weight: 500;
 }
+.cart4-profil button{
+  border: none;
+  background: transparent;
+  cursor: pointer;
+  color: #1A73E8;
+}
 .cart4-profil > p > img {
   width: 16px;
   height: 16px;
@@ -2645,10 +2651,13 @@ header {
   align-items: center;
   padding: 16px;
 }
-.cart5-profil h2 {
+.cart5-profil button{
+  cursor: pointer;
+  border: none;
+  background: transparent;
   color: #6b7280;
-  font-size: 14px;
   font-weight: 500;
+  font-size: 14px;
 }
 .cart5-profil > p > img {
   width: 16px;
@@ -2665,11 +2674,14 @@ header {
   padding: 16px;
   border-top: 1px solid #0000001a;
 }
-.cart6-profil  h4 {
+.cart6-profil  button {
   color: #dc2626;
   font-size: 14px;
   font-weight: 500;
   padding-left: 12px;
+  border: none;
+  background: transparent;
+  cursor: pointer;
 }
 .cart6-profil > p > img {
   width: 16px;
@@ -2822,3 +2834,62 @@ header {
 }
 
 /* Profil My order End */
+
+/* Profil wishlist start */
+
+.wishlist-cart{
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 16.01px;
+}
+.wishlist-cart1 img{
+  border-radius: 16px 16px 0px 0px;
+}
+.wishlist-cart1{
+  border: 1px solid #6B7280;
+  border-radius: 16px;
+}
+
+.wishlist-detail {
+  gap: 4px;
+  display: flex;
+  padding: 12px;
+  flex-direction: column;
+  /* border: 1px solid red; */
+}
+.detail1 {
+  color: #6b7280;
+  font-size: 13px;
+  font-weight: 400;
+}
+.merk-detail {
+  color: #111827;
+  font-size: 14px;
+  font-weight: 500;
+}
+.detail-star {
+  color: #6b7280;
+  font-size: 14px;
+  font-weight: 400;
+}
+.detail-star img{
+  width: 12px;
+  height: 12px;
+}
+.detail-harga {
+  color: #1a73e8;
+  font-size: 16px;
+  font-weight: 600;
+  display: flex;
+  gap: 8px;
+  align-items: center;
+}
+.detail-harga1 {
+  color: #6b7280;
+  text-decoration: line-through;
+  font-size: 12px;
+  font-weight: 400;
+}
+
+
+/* Profil Wishlist End */
