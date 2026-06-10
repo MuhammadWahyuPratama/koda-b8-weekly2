@@ -1563,6 +1563,7 @@ header {
 .container1-4-1 button {
   border: none;
   background: transparent;
+  cursor: pointer;
 }
 .container1-4-1 input {
   background: none;
@@ -1611,6 +1612,7 @@ header {
   display: flex;
   justify-content: center;
   align-items: center;
+  cursor: pointer;
 }
 .container-1-4-3 {
   margin-top: 20px;
@@ -1731,6 +1733,7 @@ header {
   display: flex;
   justify-content: center;
   align-items: center;
+  cursor: pointer;
 }
 .container-1-4-3-1 {
   margin-top: 20px;

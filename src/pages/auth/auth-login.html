@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style-1.css">
+    <link rel="stylesheet" href="/src/style/style-1.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
@@ -13,7 +13,7 @@
 <body>
     <main class="main-login">
         <div class="container">
-            <img src="asset/Shopping.svg"/>
+            <img src="/asset/Shopping.svg"/>
 
             <div class="overlay">
                 <span>B</span>
@@ -76,16 +76,16 @@
                 <div>
                 <div class="container-1-2">
                     <h1>Masuk ke Akun</h1>
-                    <p>Belum punya akun? <span>Daftar gratis</span></p>
+                    <p>Belum punya akun? <a href="/src/pages/auth/auth-register.html"><span>Daftar gratis</span></a></p>
                 </div>
                 </div>
 
                 <div class="container-1-3">
                     <div class="container-1-3-1">
-                        <button>Google</button>
+                        <button type="submit">Google</button>
                     </div>
                     <div class="container-1-3-1">
-                        <button>Facebook</button>
+                        <button type="submit">Facebook</button>
                     </div>
 
                 </div>
@@ -97,13 +97,18 @@
                 </div>
             </div>
 
+
+            <form class="login-form">
+
+
+            
             <div class ="container-1-4">
                 <div class="container-1-2-1">
                     <h1>
                         Email
                     </h1>
                     <p class="container1-4-1">
-                        <img src="asset/email.svg" /> <input type="email" placeholder="email@contoh.com"/>
+                        <img src="/asset/email.svg" /> <input id="email" type="email" placeholder="email@contoh.com"/>
                     </p>
 
                 </div>
@@ -120,8 +125,8 @@
                     </div>
                     <div class="container-1-4">
                         <p class="container1-4-1">
-                            <img src="asset/gembok.svg" /> <input type="password" placeholder="Masukkan kata sandi"/>
-                            <button><img src="asset/eye.svg" /></button>
+                            <img src="/asset/gembok.svg" /> <input id="password" type="password" placeholder="Masukkan kata sandi"/>
+                            <button type="button"><img src="/asset/eye.svg" /></button>
                         </p>
 
                     </div>
@@ -135,13 +140,14 @@
 
                     <div class="container-1-4-3">
                         <p>
-                            <button><span><img src="asset/panahmasuk.svg" /></span><span>Masuk</span></button>
+                            <button type="submit"><span><img src="/asset/panahmasuk.svg" /></span><span>Masuk</span></button>
                         </p>
                     </div>
                     
                     
 
                 </div>
+                </form>
 
                 <div class="container-1-4-4">
                     <p>🔒 Login aman dengan enkripsi SSL 256-bit</p>
@@ -160,5 +166,9 @@
 
         </div>
     </main>
+
+    <script src="/src/js/auth/login.js">
+
+    </script>
 </body>
 </html>
