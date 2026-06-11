@@ -226,7 +226,6 @@ header {
   display: flex;
   flex-direction: column;
   height: 80.5px;
-  /* border: 1px solid red; */
   color: #111827;
   font-size: 18px;
   font-weight: 500;
@@ -240,12 +239,19 @@ header {
   justify-content: space-between;
   /* text-align: center; */
 }
+.price100{
+  display: flex;
+  justify-content: space-between;
+  font-size: 14px;
+  color: #6b7280;
+}
 .merek {
   padding-top: 24px;
   color: #111827;
   font-weight: 500;
   font-size: 18px;
 }
+
 .listinput {
   padding-top: 12px;
   color: #6b7280;
