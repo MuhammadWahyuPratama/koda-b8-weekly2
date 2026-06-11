@@ -1,0 +1,1472 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap"
+      rel="stylesheet"
+    />
+
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <title>Admin Dashboard</title>
+  </head>
+  <body class="bg-slate-50">
+    <div class="flex min-h-screen">
+      <!-- SIDEBAR -->
+      <aside class="w-64 bg-slate-950 text-white flex flex-col">
+        <div class="p-5 border-b border-slate-800">
+          <div class="flex items-center gap-3">
+            <div
+              class="w-8 h-8 bg-blue-600 rounded flex items-center justify-center font-bold"
+            >
+              B
+            </div>
+
+            <h1 class="text-sm font-medium">BeliMudah Admin</h1>
+          </div>
+        </div>
+
+        <nav class="p-4 flex-1">
+          <ul class="space-y-2">
+            <li>
+              <a
+                href="#"
+                class="flex items-center px-4 py-3 bg-blue-600 rounded-lg text-sm gap-2"
+              >
+                <img src="/asset/qrdashbor.svg" />
+                Dashboard
+              </a>
+            </li>
+
+            <li>
+              <a
+                href="#"
+                class="flex items-center px-4 py-3 text-slate-400 hover:bg-slate-900 rounded-lg text-sm gap-3"
+              >
+                <img src="/asset/kardus.svg" />
+                Produk
+              </a>
+            </li>
+
+            <li>
+              <a
+                href="#"
+                class="flex items-center px-4 py-3 text-slate-400 hover:bg-slate-900 rounded-lg text-sm gap-2"
+              >
+                <img src="/asset/keranjang.svg" />
+
+                Pesanan
+              </a>
+            </li>
+
+            <li>
+              <a
+                href="#"
+                class="flex items-center px-4 py-3 text-slate-400 hover:bg-slate-900 rounded-lg text-sm gap-2"
+              >
+                <img src="/asset/2org.svg" />
+                Pelanggan
+              </a>
+            </li>
+
+            <li>
+              <a
+                href="#"
+                class="flex items-center px-4 py-3 text-slate-400 hover:bg-slate-900 rounded-lg text-sm gap-2"
+              >
+                <img src="/asset/settingg.svg" />
+                Pengaturan
+              </a>
+            </li>
+          </ul>
+        </nav>
+
+        <div class="p-5 border-t border-slate-800 text-sm text-slate-400">
+          Kembali ke Toko
+        </div>
+      </aside>
+
+      <!-- CONTENT -->
+      <main class="flex-1">
+        <!-- HEADER -->
+        <header
+          class="h-16 bg-white border-b px-8 flex items-center justify-between"
+        >
+          <p class="text-sm text-slate-500">Admin</p>
+
+          <div class="flex items-center gap-5">
+            <div class="relative">
+              🔔
+              <span
+                class="absolute -top-1 -right-1 w-2 h-2 bg-red-500 rounded-full"
+              ></span>
+            </div>
+
+            <div class="flex items-center gap-2">
+              <div
+                class="w-8 h-8 rounded-full bg-blue-100 flex items-center justify-center text-xs"
+              >
+                A
+              </div>
+
+              <span class="text-sm"> Admin </span>
+            </div>
+          </div>
+        </header>
+
+        <!-- MAIN -->
+        <div class="p-8">
+          <!-- HEADER PAGE -->
+          <div class="flex items-center justify-between mb-5">
+            <h2 class="text-[24px] font-semibold text-slate-800">
+              Manajemen Produk
+            </h2>
+
+            <button
+              class="bg-orange-500 hover:bg-orange-600 text-white text-xs px-4 py-2 rounded-lg"
+            >
+              + Tambah Produk
+            </button>
+          </div>
+
+          <!-- SEARCH -->
+          <div
+            class="bg-white border border-slate-200 rounded-lg p-3 flex items-center gap-3 mb-4"
+          >
+            <div class="flex-1">
+              <input
+                type="text"
+                placeholder="Cari produk atau merek..."
+                class="w-full h-9 border border-slate-200 rounded-md px-3 text-xs outline-none"
+              />
+            </div>
+
+            <select
+              class="h-9 border border-slate-200 rounded-md px-3 text-xs text-slate-600"
+            >
+              <option>Semua Kategori</option>
+            </select>
+
+            <button
+              class="h-9 border border-slate-200 rounded-md px-4 text-xs text-slate-600"
+            >
+              Filter
+            </button>
+          </div>
+
+          <!-- STATS -->
+          <div class="grid grid-cols-4 gap-4 mb-4">
+            <div
+              class="bg-white border border-slate-200 rounded-lg py-4 text-center"
+            >
+              <h3 class="text-xl font-semibold">18</h3>
+              <p class="text-[11px] text-slate-400 mt-1">Total Produk</p>
+            </div>
+
+            <div
+              class="bg-white border border-slate-200 rounded-lg py-4 text-center"
+            >
+              <h3 class="text-xl font-semibold">7</h3>
+              <p class="text-[11px] text-slate-400 mt-1">Produk Baru</p>
+            </div>
+
+            <div
+              class="bg-white border border-slate-200 rounded-lg py-4 text-center"
+            >
+              <h3 class="text-xl font-semibold">0</h3>
+              <p class="text-[11px] text-slate-400 mt-1">Stok Rendah</p>
+            </div>
+
+            <div
+              class="bg-white border border-slate-200 rounded-lg py-4 text-center"
+            >
+              <h3 class="text-xl font-semibold">11</h3>
+              <p class="text-[11px] text-slate-400 mt-1">Produk Promo</p>
+            </div>
+          </div>
+
+          <!-- TABLE -->
+          <div
+            class="bg-white border border-slate-200 rounded-lg overflow-hidden"
+          >
+            <!-- TOP -->
+            <div
+              class="px-4 py-3 border-b border-slate-200 text-xs text-slate-500"
+            >
+              18 produk
+            </div>
+
+            <!-- TABLE -->
+            <div class="overflow-x-auto">
+              <table class="w-full">
+                <thead>
+                  <tr
+                    class="border-b border-slate-200 bg-slate-50 text-[11px] text-slate-500"
+                  >
+                    <th class="text-left px-4 py-3 font-medium">Produk</th>
+
+                    <th class="text-left px-4 py-3 font-medium">Kategori</th>
+
+                    <th class="text-left px-4 py-3 font-medium">Harga</th>
+
+                    <th class="text-left px-4 py-3 font-medium">Stok</th>
+
+                    <th class="text-left px-4 py-3 font-medium">Rating</th>
+
+                    <th class="text-left px-4 py-3 font-medium">Status</th>
+
+                    <th class="text-center px-4 py-3 font-medium">Aksi</th>
+                  </tr>
+                </thead>
+
+                <tbody>
+                  <!-- PRODUK 1 -->
+                  <tr class="border-b border-slate-100">
+                    <td class="px-4 py-3">
+                      <div class="flex items-center gap-3">
+                        <img
+                          src="/asset/Headphone Wireless Premium.svg"
+                          alt="Headphone Wireless"
+                          class="w-9 h-9 rounded-md object-cover"
+                        />
+
+                        <div>
+                          <p class="text-[13px] text-slate-700">
+                            Headphone Wireless Premium
+                          </p>
+
+                          <p class="text-[11px] text-slate-400">SoundWave</p>
+                        </div>
+                      </div>
+                    </td>
+
+                    <td class="px-4 py-3">
+                      <span
+                        class="bg-blue-50 text-blue-500 text-[10px] px-2 py-1 rounded-full"
+                      >
+                        Elektronik
+                      </span>
+                    </td>
+
+                    <td class="px-4 py-3">
+                      <p class="text-[13px] text-blue-500">Rp 450.000</p>
+
+                      <p class="text-[11px] text-slate-400 line-through">
+                        Rp 650.000
+                      </p>
+                    </td>
+
+                    <td class="px-4 py-3 text-[13px] text-slate-700">45</td>
+
+                    <td class="px-4 py-3">
+                      <span class="text-[13px] text-slate-700"> ⭐ 4.8 </span>
+
+                      <span class="text-[11px] text-slate-400"> (512) </span>
+                    </td>
+
+                    <td class="px-4 py-3">
+                      <div class="flex gap-1">
+                        <span
+                          class="bg-blue-50 text-blue-500 text-[10px] px-2 py-1 rounded-full"
+                        >
+                          Baru
+                        </span>
+
+                        <span
+                          class="bg-orange-50 text-orange-500 text-[10px] px-2 py-1 rounded-full"
+                        >
+                          Unggulan
+                        </span>
+
+                        <span
+                          class="bg-red-50 text-red-500 text-[10px] px-2 py-1 rounded-full"
+                        >
+                          Promo
+                        </span>
+                      </div>
+                    </td>
+
+                    <td class="px-4 py-3">
+                      <div
+                        class="flex justify-center items-center gap-3 text-slate-400"
+                      >
+                        <button class="hover:text-slate-700"><img src="/asset/eye.svg"/></button>
+
+                        <button class="hover:text-slate-700"><img src="/asset/typing.svg"/></button>
+
+                        <button class="hover:text-red-500"><img src="/asset/trashh.svg"/></button>
+                      </div>
+                    </td>
+                  </tr>
+
+                 
+                </tbody>
+
+                <tbody>
+                  <!-- PRODUK 1 -->
+                  <tr class="border-b border-slate-100">
+                    <td class="px-4 py-3">
+                      <div class="flex items-center gap-3">
+                        <img
+                          src="/asset/Smartphone 5G Ultra.svg"
+                          alt="PhoneX"
+                          class="w-9 h-9 rounded-md object-cover"
+                        />
+
+                        <div>
+                          <p class="text-[13px] text-slate-700">
+                            Smartphone 5G Ultra
+                          </p>
+
+                          <p class="text-[11px] text-slate-400">PhoneX</p>
+                        </div>
+                      </div>
+                    </td>
+
+                    <td class="px-4 py-3">
+                      <span
+                        class="bg-blue-50 text-blue-500 text-[10px] px-2 py-1 rounded-full"
+                      >
+                        Elektronik
+                      </span>
+                    </td>
+
+                    <td class="px-4 py-3">
+                      <p class="text-[13px] text-blue-500">Rp 4.200.000</p>
+
+                      <p class="text-[11px] text-slate-400 line-through">
+                       Rp 5.000.000
+                      </p>
+                    </td>
+
+                    <td class="px-4 py-3 text-[13px] text-slate-700">30</td>
+
+                    <td class="px-4 py-3">
+                      <span class="text-[13px] text-slate-700"> ⭐ 4.6 </span>
+
+                      <span class="text-[11px] text-slate-400"> (890) </span>
+                    </td>
+
+                    <td class="px-4 py-3">
+                      <div class="flex gap-1">
+                        <span
+                          class="bg-blue-50 text-blue-500 text-[10px] px-2 py-1 rounded-full"
+                        >
+                          Baru
+                        </span>
+
+                        <span
+                          class="bg-orange-50 text-orange-500 text-[10px] px-2 py-1 rounded-full"
+                        >
+                          Unggulan
+                        </span>
+
+                        <span
+                          class="bg-red-50 text-red-500 text-[10px] px-2 py-1 rounded-full"
+                        >
+                          Promo
+                        </span>
+                      </div>
+                    </td>
+
+                    <td class="px-4 py-3">
+                      <div
+                        class="flex justify-center items-center gap-3 text-slate-400"
+                      >
+                        <button class="hover:text-slate-700"><img src="/asset/eye.svg"/></button>
+
+                        <button class="hover:text-slate-700"><img src="/asset/typing.svg"/></button>
+
+                        <button class="hover:text-red-500"><img src="/asset/trashh.svg"/></button>
+                      </div>
+                    </td>
+                  </tr>
+                </tbody>
+
+                <tbody>
+                  <!-- PRODUK 1 -->
+                  <tr class="border-b border-slate-100">
+                    <td class="px-4 py-3">
+                      <div class="flex items-center gap-3">
+                        <img
+                          src="/asset/Smartwatch Series 5.svg"
+                          alt="WristTech"
+                          class="w-9 h-9 rounded-md object-cover"
+                        />
+
+                        <div>
+                          <p class="text-[13px] text-slate-700">
+                           Smartwatch Series 5
+                          </p>
+
+                          <p class="text-[11px] text-slate-400">WristTech</p>
+                        </div>
+                      </div>
+                    </td>
+
+                    <td class="px-4 py-3">
+                      <span
+                        class="bg-blue-50 text-blue-500 text-[10px] px-2 py-1 rounded-full"
+                      >
+                        Elektronik
+                      </span>
+                    </td>
+
+                    <td class="px-4 py-3">
+                      <p class="text-[13px] text-blue-500">Rp 2.800.000</p>
+
+                      <p class="text-[11px] text-slate-400 line-through">
+                       Rp 3.500.000
+                      </p>
+                    </td>
+
+                    <td class="px-4 py-3 text-[13px] text-slate-700">22</td>
+
+                    <td class="px-4 py-3">
+                      <span class="text-[13px] text-slate-700"> ⭐ 4.4 </span>
+
+                      <span class="text-[11px] text-slate-400"> (324)</span>
+                    </td>
+
+                    <td class="px-4 py-3">
+                      <div class="flex gap-1">
+
+                        <span
+                          class="bg-orange-50 text-orange-500 text-[10px] px-2 py-1 rounded-full"
+                        >
+                          Unggulan
+                        </span>
+
+                        <span
+                          class="bg-red-50 text-red-500 text-[10px] px-2 py-1 rounded-full"
+                        >
+                          Promo
+                        </span>
+                      </div>
+                    </td>
+
+                    <td class="px-4 py-3">
+                      <div
+                        class="flex justify-center items-center gap-3 text-slate-400"
+                      >
+                        <button class="hover:text-slate-700"><img src="/asset/eye.svg"/></button>
+
+                        <button class="hover:text-slate-700"><img src="/asset/typing.svg"/></button>
+
+                        <button class="hover:text-red-500"><img src="/asset/trashh.svg"/></button>
+                      </div>
+                    </td>
+                  </tr>
+
+                </tbody>
+
+                <tbody>
+                  <!-- PRODUK 1 -->
+                  <tr class="border-b border-slate-100">
+                    <td class="px-4 py-3">
+                      <div class="flex items-center gap-3">
+                        <img
+                          src="/asset/Kaos Polos Premium Cotton.svg"
+                          alt="FashionID"
+                          class="w-9 h-9 rounded-md object-cover"
+                        />
+
+                        <div>
+                          <p class="text-[13px] text-slate-700">
+                            Kaos Polos Premium Cotton
+                          </p>
+
+                          <p class="text-[11px] text-slate-400">FashionID</p>
+                        </div>
+                      </div>
+                    </td>
+
+                    <td class="px-4 py-3">
+                      <span
+                        class="bg-blue-50 text-blue-500 text-[10px] px-2 py-1 rounded-full"
+                      >
+                        Fashion
+                      </span>
+                    </td>
+
+                    <td class="px-4 py-3">
+                      <p class="text-[13px] text-blue-500">Rp 125.000</p>
+
+                      
+                    </td>
+
+                    <td class="px-4 py-3 text-[13px] text-slate-700">200</td>
+
+                    <td class="px-4 py-3">
+                      <span class="text-[13px] text-slate-700"> ⭐ 4.3 </span>
+
+                      <span class="text-[11px] text-slate-400"> (678) </span>
+                    </td>
+
+                    <td class="px-4 py-3">
+                     
+                    </td>
+
+                    <td class="px-4 py-3">
+                      <div
+                        class="flex justify-center items-center gap-3 text-slate-400"
+                      >
+                        <button class="hover:text-slate-700"><img src="/asset/eye.svg"/></button>
+
+                        <button class="hover:text-slate-700"><img src="/asset/typing.svg"/></button>
+
+                        <button class="hover:text-red-500"><img src="/asset/trashh.svg"/></button>
+                      </div>
+                    </td>
+                  </tr>
+
+               
+                </tbody>
+
+                <tbody>
+                  <!-- PRODUK 1 -->
+                  <tr class="border-b border-slate-100">
+                    <td class="px-4 py-3">
+                      <div class="flex items-center gap-3">
+                        <img
+                          src="/asset/Sneakers Sport Runfast.svg"
+                          alt="SportPro"
+                          class="w-9 h-9 rounded-md object-cover"
+                        />
+
+                        <div>
+                          <p class="text-[13px] text-slate-700">
+                            Sneakers Sport Runfast
+                          </p>
+
+                          <p class="text-[11px] text-slate-400">SportPro</p>
+                        </div>
+                      </div>
+                    </td>
+
+                    <td class="px-4 py-3">
+                      <span
+                        class="bg-blue-50 text-blue-500 text-[10px] px-2 py-1 rounded-full"
+                      >
+                        Fashion
+                      </span>
+                    </td>
+
+                    <td class="px-4 py-3">
+                      <p class="text-[13px] text-blue-500">Rp 550.000</p>
+
+                      <p class="text-[11px] text-slate-400 line-through">
+                        Rp 750.000
+                      </p>
+                    </td>
+
+                    <td class="px-4 py-3 text-[13px] text-slate-700">60</td>
+
+                    <td class="px-4 py-3">
+                      <span class="text-[13px] text-slate-700"> ⭐ 4.6 </span>
+
+                      <span class="text-[11px] text-slate-400"> (445) </span>
+                    </td>
+
+                    <td class="px-4 py-3">
+                      <div class="flex gap-1">
+                        
+
+                        <span
+                          class="bg-orange-50 text-orange-500 text-[10px] px-2 py-1 rounded-full"
+                        >
+                          Unggulan
+                        </span>
+
+                        <span
+                          class="bg-red-50 text-red-500 text-[10px] px-2 py-1 rounded-full"
+                        >
+                          Promo
+                        </span>
+                      </div>
+                    </td>
+
+                    <td class="px-4 py-3">
+                      <div
+                        class="flex justify-center items-center gap-3 text-slate-400"
+                      >
+                        <button class="hover:text-slate-700"><img src="/asset/eye.svg"/></button>
+
+                        <button class="hover:text-slate-700"><img src="/asset/typing.svg"/></button>
+
+                        <button class="hover:text-red-500"><img src="/asset/trashh.svg"/></button>
+                      </div>
+                    </td>
+                  </tr>
+
+                 
+                </tbody>
+
+                <tbody>
+                  <!-- PRODUK 1 -->
+                  <tr class="border-b border-slate-100">
+                    <td class="px-4 py-3">
+                      <div class="flex items-center gap-3">
+                        <img
+                          src="/asset/Tas Ransel Laptop Waterproof.svg"
+                          alt="UrbanBag"
+                          class="w-9 h-9 rounded-md object-cover"
+                        />
+
+                        <div>
+                          <p class="text-[13px] text-slate-700">
+                            Tas Ransel Laptop Waterproof
+                          </p>
+
+                          <p class="text-[11px] text-slate-400">UrbanBag</p>
+                        </div>
+                      </div>
+                    </td>
+
+                    <td class="px-4 py-3">
+                      <span
+                        class="bg-blue-50 text-blue-500 text-[10px] px-2 py-1 rounded-full"
+                      >
+                        Fashion
+                      </span>
+                    </td>
+
+                    <td class="px-4 py-3">
+                      <p class="text-[13px] text-blue-500">Rp 350.000</p>
+
+                      
+                    </td>
+
+                    <td class="px-4 py-3 text-[13px] text-slate-700">80</td>
+
+                    <td class="px-4 py-3">
+                      <span class="text-[13px] text-slate-700"> ⭐ 4.5 </span>
+
+                      <span class="text-[11px] text-slate-400"> (234) </span>
+                    </td>
+
+                    <td class="px-4 py-3">
+                      <div class="flex gap-1">
+                        <span
+                          class="bg-blue-50 text-blue-500 text-[10px] px-2 py-1 rounded-full"
+                        >
+                          Baru
+                        </span>
+
+                       
+                      </div>
+                    </td>
+
+                    <td class="px-4 py-3">
+                      <div
+                        class="flex justify-center items-center gap-3 text-slate-400"
+                      >
+                        <button class="hover:text-slate-700"><img src="/asset/eye.svg"/></button>
+
+                        <button class="hover:text-slate-700"><img src="/asset/typing.svg"/></button>
+
+                        <button class="hover:text-red-500"><img src="/asset/trashh.svg"/></button>
+                      </div>
+                    </td>
+                  </tr>
+                </tbody>
+
+                <tbody>
+                  <!-- PRODUK 1 -->
+                  <tr class="border-b border-slate-100">
+                    <td class="px-4 py-3">
+                      <div class="flex items-center gap-3">
+                        <img
+                          src="/asset/Coffee Maker Otomatis.svg"
+                          alt="BrewMaster"
+                          class="w-9 h-9 rounded-md object-cover"
+                        />
+
+                        <div>
+                          <p class="text-[13px] text-slate-700">
+                            Coffee Maker Otomatis
+                          </p>
+
+                          <p class="text-[11px] text-slate-400">BrewMaster</p>
+                        </div>
+                      </div>
+                    </td>
+
+                    <td class="px-4 py-3">
+                      <span
+                        class="bg-blue-50 text-blue-500 text-[10px] px-2 py-1 rounded-full"
+                      >
+                        Rumah & Dapur
+                      </span>
+                    </td>
+
+                    <td class="px-4 py-3">
+                      <p class="text-[13px] text-blue-500">Rp 875.000</p>
+
+                      <p class="text-[11px] text-slate-400 line-through">
+                       Rp 1.200.000
+                      </p>
+                    </td>
+
+                    <td class="px-4 py-3 text-[13px] text-slate-700">25</td>
+
+                    <td class="px-4 py-3">
+                      <span class="text-[13px] text-slate-700"> ⭐ 4.4 </span>
+
+                      <span class="text-[11px] text-slate-400"> (189) </span>
+                    </td>
+
+                    <td class="px-4 py-3">
+                      <div class="flex gap-1">
+                        
+
+                        <span
+                          class="bg-orange-50 text-orange-500 text-[10px] px-2 py-1 rounded-full"
+                        >
+                          Unggulan
+                        </span>
+
+                        <span
+                          class="bg-red-50 text-red-500 text-[10px] px-2 py-1 rounded-full"
+                        >
+                          Promo
+                        </span>
+                      </div>
+                    </td>
+
+                    <td class="px-4 py-3">
+                      <div
+                        class="flex justify-center items-center gap-3 text-slate-400"
+                      >
+                        <button class="hover:text-slate-700"><img src="/asset/eye.svg"/></button>
+
+                        <button class="hover:text-slate-700"><img src="/asset/typing.svg"/></button>
+
+                        <button class="hover:text-red-500"><img src="/asset/trashh.svg"/></button>
+                      </div>
+                    </td>
+                  </tr>
+                </tbody>
+
+                <tbody>
+                  <!-- PRODUK 1 -->
+                  <tr class="border-b border-slate-100">
+                    <td class="px-4 py-3">
+                      <div class="flex items-center gap-3">
+                        <img
+                          src="/asset/Blender Portable Mini.svg"
+                          alt="BlendPro"
+                          class="w-9 h-9 rounded-md object-cover"
+                        />
+
+                        <div>
+                          <p class="text-[13px] text-slate-700">
+                           Blender Portable Mini
+                          </p>
+
+                          <p class="text-[11px] text-slate-400">BlendPro</p>
+                        </div>
+                      </div>
+                    </td>
+
+                    <td class="px-4 py-3">
+                      <span
+                        class="bg-blue-50 text-blue-500 text-[10px] px-2 py-1 rounded-full"
+                      >
+                        Rumah & Dapur
+                      </span>
+                    </td>
+
+                    <td class="px-4 py-3">
+                      <p class="text-[13px] text-blue-500">Rp 189.000</p>
+
+                      
+                    </td>
+
+                    <td class="px-4 py-3 text-[13px] text-slate-700">120</td>
+
+                    <td class="px-4 py-3">
+                      <span class="text-[13px] text-slate-700"> ⭐ 4.2 </span>
+
+                      <span class="text-[11px] text-slate-400"> (567) </span>
+                    </td>
+
+                    <td class="px-4 py-3">
+                      <div class="flex gap-1">
+                        <span
+                          class="bg-blue-50 text-blue-500 text-[10px] px-2 py-1 rounded-full"
+                        >
+                          Baru
+                        </span>
+
+                        
+                      </div>
+                    </td>
+
+                    <td class="px-4 py-3">
+                      <div
+                        class="flex justify-center items-center gap-3 text-slate-400"
+                      >
+                        <button class="hover:text-slate-700"><img src="/asset/eye.svg"/></button>
+
+                        <button class="hover:text-slate-700"><img src="/asset/typing.svg"/></button>
+
+                        <button class="hover:text-red-500"><img src="/asset/trashh.svg"/></button>
+                      </div>
+                    </td>
+                  </tr>
+                </tbody>
+
+                <tbody>
+                  <!-- PRODUK 1 -->
+                  <tr class="border-b border-slate-100">
+                    <td class="px-4 py-3">
+                      <div class="flex items-center gap-3">
+                        <img
+                          src="/asset/Tablet 10.5_ WiFi + 4G.svg"
+                          alt="TabTech"
+                          class="w-9 h-9 rounded-md object-cover"
+                        />
+
+                        <div>
+                          <p class="text-[13px] text-slate-700">
+                            Tablet 10.5" WiFi + 4G
+                          </p>
+
+                          <p class="text-[11px] text-slate-400">TabTech</p>
+                        </div>
+                      </div>
+                    </td>
+
+                    <td class="px-4 py-3">
+                      <span
+                        class="bg-blue-50 text-blue-500 text-[10px] px-2 py-1 rounded-full"
+                      >
+                        Elektronik
+                      </span>
+                    </td>
+
+                    <td class="px-4 py-3">
+                      <p class="text-[13px] text-blue-500">Rp 3.200.000</p>
+
+                      <p class="text-[11px] text-slate-400 line-through">
+                       Rp 4.000.000
+                      </p>
+                    </td>
+
+                    <td class="px-4 py-3 text-[13px] text-slate-700">18</td>
+
+                    <td class="px-4 py-3">
+                      <span class="text-[13px] text-slate-700"> ⭐ 4.5 </span>
+
+                      <span class="text-[11px] text-slate-400"> (345) </span>
+                    </td>
+
+                    <td class="px-4 py-3">
+                      <div class="flex gap-1">
+                        <span
+                          class="bg-blue-50 text-blue-500 text-[10px] px-2 py-1 rounded-full"
+                        >
+                          Baru
+                        </span>
+
+                        
+
+                        <span
+                          class="bg-red-50 text-red-500 text-[10px] px-2 py-1 rounded-full"
+                        >
+                          Promo
+                        </span>
+                      </div>
+                    </td>
+
+                    <td class="px-4 py-3">
+                      <div
+                        class="flex justify-center items-center gap-3 text-slate-400"
+                      >
+                        <button class="hover:text-slate-700"><img src="/asset/eye.svg"/></button>
+
+                        <button class="hover:text-slate-700"><img src="/asset/typing.svg"/></button>
+
+                        <button class="hover:text-red-500"><img src="/asset/trashh.svg"/></button>
+                      </div>
+                    </td>
+                  </tr>
+                </tbody>
+
+                <tbody>
+                  <!-- PRODUK 1 -->
+                  <tr class="border-b border-slate-100">
+                    <td class="px-4 py-3">
+                      <div class="flex items-center gap-3">
+                        <img
+                          src="/asset/Serum Vitamin C Brightening.svg"
+                          alt="GlowLab"
+                          class="w-9 h-9 rounded-md object-cover"
+                        />
+
+                        <div>
+                          <p class="text-[13px] text-slate-700">
+                            Serum Vitamin C Brightening
+                          </p>
+
+                          <p class="text-[11px] text-slate-400">GlowLab</p>
+                        </div>
+                      </div>
+                    </td>
+
+                    <td class="px-4 py-3">
+                      <span
+                        class="bg-blue-50 text-blue-500 text-[10px] px-2 py-1 rounded-full"
+                      >
+                        Kecantikan
+                      </span>
+                    </td>
+
+                    <td class="px-4 py-3">
+                      <p class="text-[13px] text-blue-500">Rp 185.000</p>
+
+                      <p class="text-[11px] text-slate-400 line-through">
+                       Rp 250.000
+                      </p>
+                    </td>
+
+                    <td class="px-4 py-3 text-[13px] text-slate-700">150</td>
+
+                    <td class="px-4 py-3">
+                      <span class="text-[13px] text-slate-700"> ⭐ 4.6 </span>
+
+                      <span class="text-[11px] text-slate-400"> (892) </span>
+                    </td>
+
+                    <td class="px-4 py-3">
+                      <div class="flex gap-1">
+                       
+
+                        <span
+                          class="bg-red-50 text-red-500 text-[10px] px-2 py-1 rounded-full"
+                        >
+                          Promo
+                        </span>
+                      </div>
+                    </td>
+
+                    <td class="px-4 py-3">
+                      <div
+                        class="flex justify-center items-center gap-3 text-slate-400"
+                      >
+                        <button class="hover:text-slate-700"><img src="/asset/eye.svg"/></button>
+
+                        <button class="hover:text-slate-700"><img src="/asset/typing.svg"/></button>
+
+                        <button class="hover:text-red-500"><img src="/asset/trashh.svg"/></button>
+                      </div>
+                    </td>
+                  </tr>
+                </tbody>
+
+                <tbody>
+                  <!-- PRODUK 1 -->
+                  <tr class="border-b border-slate-100">
+                    <td class="px-4 py-3">
+                      <div class="flex items-center gap-3">
+                        <img
+                          src="/asset/Sepatu Lari Trail Ultra.svg"
+                          alt="TrailRunner"
+                          class="w-9 h-9 rounded-md object-cover"
+                        />
+
+                        <div>
+                          <p class="text-[13px] text-slate-700">
+                            Sepatu Lari Trail Ultra
+                          </p>
+
+                          <p class="text-[11px] text-slate-400">TrailRunner</p>
+                        </div>
+                      </div>
+                    </td>
+
+                    <td class="px-4 py-3">
+                      <span
+                        class="bg-blue-50 text-blue-500 text-[10px] px-2 py-1 rounded-full"
+                      >
+                        Olahraga
+                      </span>
+                    </td>
+
+                    <td class="px-4 py-3">
+                      <p class="text-[13px] text-blue-500">Rp 780.000</p>
+
+                      
+                    </td>
+
+                    <td class="px-4 py-3 text-[13px] text-slate-700">35</td>
+
+                    <td class="px-4 py-3">
+                      <span class="text-[13px] text-slate-700"> ⭐ 4.7 </span>
+
+                      <span class="text-[11px] text-slate-400"> (267) </span>
+                    </td>
+
+                    <td class="px-4 py-3">
+                      <div class="flex gap-1">
+                        
+                      </div>
+                    </td>
+
+                    <td class="px-4 py-3">
+                      <div
+                        class="flex justify-center items-center gap-3 text-slate-400"
+                      >
+                        <button class="hover:text-slate-700"><img src="/asset/eye.svg"/></button>
+
+                        <button class="hover:text-slate-700"><img src="/asset/typing.svg"/></button>
+
+                        <button class="hover:text-red-500"><img src="/asset/trashh.svg"/></button>
+                      </div>
+                    </td>
+                  </tr>
+                </tbody>
+
+                <tbody>
+                  <!-- PRODUK 1 -->
+                  <tr class="border-b border-slate-100">
+                    <td class="px-4 py-3">
+                      <div class="flex items-center gap-3">
+                        <img
+                          src="/asset/Buku _Atomic Habits_.svg"
+                          alt="Gramedia"
+                          class="w-9 h-9 rounded-md object-cover"
+                        />
+
+                        <div>
+                          <p class="text-[13px] text-slate-700">
+                            Buku "Atomic Habits"
+                          </p>
+
+                          <p class="text-[11px] text-slate-400">Gramedia</p>
+                        </div>
+                      </div>
+                    </td>
+
+                    <td class="px-4 py-3">
+                      <span
+                        class="bg-blue-50 text-blue-500 text-[10px] px-2 py-1 rounded-full"
+                      >
+                        Buku & Alat Tulis
+                      </span>
+                    </td>
+
+                    <td class="px-4 py-3">
+                      <p class="text-[13px] text-blue-500">Rp 89.000</p>
+
+                      <p class="text-[11px] text-slate-400 line-through">
+                       Rp 110.000
+                      </p>
+                    </td>
+
+                    <td class="px-4 py-3 text-[13px] text-slate-700">500</td>
+
+                    <td class="px-4 py-3">
+                      <span class="text-[13px] text-slate-700"> ⭐ 4.9 </span>
+
+                      <span class="text-[11px] text-slate-400"> (1245) </span>
+                    </td>
+
+                    <td class="px-4 py-3">
+                      <div class="flex gap-1">
+                        
+
+                        
+
+                        <span
+                          class="bg-red-50 text-red-500 text-[10px] px-2 py-1 rounded-full"
+                        >
+                          Promo
+                        </span>
+                      </div>
+                    </td>
+
+                    <td class="px-4 py-3">
+                      <div
+                        class="flex justify-center items-center gap-3 text-slate-400"
+                      >
+                        <button class="hover:text-slate-700"><img src="/asset/eye.svg"/></button>
+
+                        <button class="hover:text-slate-700"><img src="/asset/typing.svg"/></button>
+
+                        <button class="hover:text-red-500"><img src="/asset/trashh.svg"/></button>
+                      </div>
+                    </td>
+                  </tr>
+                </tbody>
+
+                <tbody>
+                  <!-- PRODUK 1 -->
+                  <tr class="border-b border-slate-100">
+                    <td class="px-4 py-3">
+                      <div class="flex items-center gap-3">
+                        <img
+                          src="/asset/Speaker Bluetooth Portable.svg"
+                          alt="SoundWave"
+                          class="w-9 h-9 rounded-md object-cover"
+                        />
+
+                        <div>
+                          <p class="text-[13px] text-slate-700">
+                            Speaker Bluetooth Portable
+                          </p>
+
+                          <p class="text-[11px] text-slate-400">SoundWave</p>
+                        </div>
+                      </div>
+                    </td>
+
+                    <td class="px-4 py-3">
+                      <span
+                        class="bg-blue-50 text-blue-500 text-[10px] px-2 py-1 rounded-full"
+                      >
+                        Elektronik
+                      </span>
+                    </td>
+
+                    <td class="px-4 py-3">
+                      <p class="text-[13px] text-blue-500">Rp 320.000</p>
+
+                      <p class="text-[11px] text-slate-400 line-through">
+                       Rp 450.000
+                      </p>
+                    </td>
+
+                    <td class="px-4 py-3 text-[13px] text-slate-700">75</td>
+
+                    <td class="px-4 py-3">
+                      <span class="text-[13px] text-slate-700"> ⭐ 4.4 </span>
+
+                      <span class="text-[11px] text-slate-400"> (389) </span>
+                    </td>
+
+                    <td class="px-4 py-3">
+                      <div class="flex gap-1">
+                        
+
+                        <span
+                          class="bg-red-50 text-red-500 text-[10px] px-2 py-1 rounded-full"
+                        >
+                          Promo
+                        </span>
+                      </div>
+                    </td>
+
+                    <td class="px-4 py-3">
+                      <div
+                        class="flex justify-center items-center gap-3 text-slate-400"
+                      >
+                        <button class="hover:text-slate-700"><img src="/asset/eye.svg"/></button>
+
+                        <button class="hover:text-slate-700"><img src="/asset/typing.svg"/></button>
+
+                        <button class="hover:text-red-500"><img src="/asset/trashh.svg"/></button>
+                      </div>
+                    </td>
+                  </tr>
+                </tbody>
+
+                <tbody>
+                  <!-- PRODUK 1 -->
+                  <tr class="border-b border-slate-100">
+                    <td class="px-4 py-3">
+                      <div class="flex items-center gap-3">
+                        <img
+                          src="/asset/Dress Floral Midi.svg"
+                          alt="FashionID"
+                          class="w-9 h-9 rounded-md object-cover"
+                        />
+
+                        <div>
+                          <p class="text-[13px] text-slate-700">
+                            Dress Floral Midi
+                          </p>
+
+                          <p class="text-[11px] text-slate-400">FashionID</p>
+                        </div>
+                      </div>
+                    </td>
+
+                    <td class="px-4 py-3">
+                      <span
+                        class="bg-blue-50 text-blue-500 text-[10px] px-2 py-1 rounded-full"
+                      >
+                        Fashion
+                      </span>
+                    </td>
+
+                    <td class="px-4 py-3">
+                      <p class="text-[13px] text-blue-500">Rp 295.000</p>
+
+                      <p class="text-[11px] text-slate-400 line-through">
+                       Rp 395.000
+                      </p>
+                    </td>
+
+                    <td class="px-4 py-3 text-[13px] text-slate-700">55</td>
+
+                    <td class="px-4 py-3">
+                      <span class="text-[13px] text-slate-700"> ⭐ 4.5 </span>
+
+                      <span class="text-[11px] text-slate-400"> (312) </span>
+                    </td>
+
+                    <td class="px-4 py-3">
+                      <div class="flex gap-1">
+                        <span
+                          class="bg-blue-50 text-blue-500 text-[10px] px-2 py-1 rounded-full"
+                        >
+                          Baru
+                        </span>
+
+                        <span
+                          class="bg-orange-50 text-orange-500 text-[10px] px-2 py-1 rounded-full"
+                        >
+                          Unggulan
+                        </span>
+
+                        <span
+                          class="bg-red-50 text-red-500 text-[10px] px-2 py-1 rounded-full"
+                        >
+                          Promo
+                        </span>
+                      </div>
+                    </td>
+
+                    <td class="px-4 py-3">
+                      <div
+                        class="flex justify-center items-center gap-3 text-slate-400"
+                      >
+                        <button class="hover:text-slate-700"><img src="/asset/eye.svg"/></button>
+
+                        <button class="hover:text-slate-700"><img src="/asset/typing.svg"/></button>
+
+                        <button class="hover:text-red-500"><img src="/asset/trashh.svg"/></button>
+                      </div>
+                    </td>
+                  </tr>
+                </tbody>
+
+                <tbody>
+                  <!-- PRODUK 1 -->
+                  <tr class="border-b border-slate-100">
+                    <td class="px-4 py-3">
+                      <div class="flex items-center gap-3">
+                        <img
+                          src="/asset/Minyak Esensial Lavender Set.svg"
+                          alt="AromaWell"
+                          class="w-9 h-9 rounded-md object-cover"
+                        />
+
+                        <div>
+                          <p class="text-[13px] text-slate-700">
+                            Minyak Esensial Lavender Set
+                          </p>
+
+                          <p class="text-[11px] text-slate-400">AromaWell</p>
+                        </div>
+                      </div>
+                    </td>
+
+                    <td class="px-4 py-3">
+                      <span
+                        class="bg-blue-50 text-blue-500 text-[10px] px-2 py-1 rounded-full"
+                      >
+                        Kecantikan
+                      </span>
+                    </td>
+
+                    <td class="px-4 py-3">
+                      <p class="text-[13px] text-blue-500">Rp 145.000</p>
+
+                      
+                    </td>
+
+                    <td class="px-4 py-3 text-[13px] text-slate-700">90</td>
+
+                    <td class="px-4 py-3">
+                      <span class="text-[13px] text-slate-700"> ⭐ 4.8 </span>
+
+                      <span class="text-[11px] text-slate-400"> (456) </span>
+                    </td>
+
+                    <td class="px-4 py-3">
+                      <div class="flex gap-1">
+                        <span
+                          class="bg-blue-50 text-blue-500 text-[10px] px-2 py-1 rounded-full"
+                        >
+                          Baru
+                        </span>
+
+                        
+                      </div>
+                    </td>
+
+                    <td class="px-4 py-3">
+                      <div
+                        class="flex justify-center items-center gap-3 text-slate-400"
+                      >
+                        <button class="hover:text-slate-700"><img src="/asset/eye.svg"/></button>
+
+                        <button class="hover:text-slate-700"><img src="/asset/typing.svg"/></button>
+
+                        <button class="hover:text-red-500"><img src="/asset/trashh.svg"/></button>
+                      </div>
+                    </td>
+                  </tr>
+                </tbody>
+
+                <tbody>
+                  <!-- PRODUK 1 -->
+                  <tr class="border-b border-slate-100">
+                    <td class="px-4 py-3">
+                      <div class="flex items-center gap-3">
+                        <img
+                          src="/asset/Matras Yoga Premium.svg"
+                          alt="FitLife"
+                          class="w-9 h-9 rounded-md object-cover"
+                        />
+
+                        <div>
+                          <p class="text-[13px] text-slate-700">
+                            Matras Yoga Premium
+                          </p>
+
+                          <p class="text-[11px] text-slate-400">FitLife</p>
+                        </div>
+                      </div>
+                    </td>
+
+                    <td class="px-4 py-3">
+                      <span
+                        class="bg-blue-50 text-blue-500 text-[10px] px-2 py-1 rounded-full"
+                      >
+                        Olahraga
+                      </span>
+                    </td>
+
+                    <td class="px-4 py-3">
+                      <p class="text-[13px] text-blue-500">Rp 280.000</p>
+
+                      
+                    </td>
+
+                    <td class="px-4 py-3 text-[13px] text-slate-700">65</td>
+
+                    <td class="px-4 py-3">
+                      <span class="text-[13px] text-slate-700"> ⭐ 4.5</span>
+
+                      <span class="text-[11px] text-slate-400"> (198) </span>
+                    </td>
+
+                    <td class="px-4 py-3">
+                      <div class="flex gap-1">
+                       
+                      </div>
+                    </td>
+
+                    <td class="px-4 py-3">
+                      <div
+                        class="flex justify-center items-center gap-3 text-slate-400"
+                      >
+                        <button class="hover:text-slate-700"><img src="/asset/eye.svg"/></button>
+
+                        <button class="hover:text-slate-700"><img src="/asset/typing.svg"/></button>
+
+                        <button class="hover:text-red-500"><img src="/asset/trashh.svg"/></button>
+                      </div>
+                    </td>
+                  </tr>
+                </tbody>
+
+                <tbody>
+                  <!-- PRODUK 1 -->
+                  <tr class="border-b border-slate-100">
+                    <td class="px-4 py-3">
+                      <div class="flex items-center gap-3">
+                        <img
+                          src="/asset/Raket Badminton Carbon Pro.svg"
+                          alt="SmashKing"
+                          class="w-9 h-9 rounded-md object-cover"
+                        />
+
+                        <div>
+                          <p class="text-[13px] text-slate-700">
+                            Raket Badminton Carbon Pro
+                          </p>
+
+                          <p class="text-[11px] text-slate-400">SmashKing</p>
+                        </div>
+                      </div>
+                    </td>
+
+                    <td class="px-4 py-3">
+                      <span
+                        class="bg-blue-50 text-blue-500 text-[10px] px-2 py-1 rounded-full"
+                      >
+                        Olahraga
+                      </span>
+                    </td>
+
+                    <td class="px-4 py-3">
+                      <p class="text-[13px] text-blue-500">Rp 675.000</p>
+
+                      <p class="text-[11px] text-slate-400 line-through">
+                       Rp 850.000
+                      </p>
+                    </td>
+
+                    <td class="px-4 py-3 text-[13px] text-slate-700">30</td>
+
+                    <td class="px-4 py-3">
+                      <span class="text-[13px] text-slate-700"> ⭐ 4.6 </span>
+
+                      <span class="text-[11px] text-slate-400"> (143) </span>
+                    </td>
+
+                    <td class="px-4 py-3">
+                      <div class="flex gap-1">
+                       
+
+                        <span
+                          class="bg-red-50 text-red-500 text-[10px] px-2 py-1 rounded-full"
+                        >
+                          Promo
+                        </span>
+                      </div>
+                    </td>
+
+                    <td class="px-4 py-3">
+                      <div
+                        class="flex justify-center items-center gap-3 text-slate-400"
+                      >
+                        <button class="hover:text-slate-700"><img src="/asset/eye.svg"/></button>
+
+                        <button class="hover:text-slate-700"><img src="/asset/typing.svg"/></button>
+
+                        <button class="hover:text-red-500"><img src="/asset/trashh.svg"/></button>
+                      </div>
+                    </td>
+                  </tr>
+                </tbody>
+
+                
+                
+              </table>
+            </div>
+          </div>
+        </div>
+      </main>
+    </div>
+  </body>
+</html>
