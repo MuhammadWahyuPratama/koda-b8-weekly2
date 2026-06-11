@@ -1,0 +1,481 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap"
+      rel="stylesheet"
+    />
+
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <title>Admin Dashboard</title>
+  </head>
+  <body class="bg-slate-50">
+    <div class="flex min-h-screen">
+      <!-- SIDEBAR -->
+      <aside class="w-64 bg-slate-950 text-white flex flex-col">
+        <div class="p-5 border-b border-slate-800">
+          <div class="flex items-center gap-3">
+            <div
+              class="w-8 h-8 bg-blue-600 rounded flex items-center justify-center font-bold"
+            >
+              B
+            </div>
+
+            <h1 class="text-sm font-medium">BeliMudah Admin</h1>
+          </div>
+        </div>
+
+        <nav class="p-4 flex-1">
+          <ul class="space-y-2">
+            <li>
+              <a
+                href="#"
+                class="flex items-center px-4 py-3 bg-blue-600 rounded-lg text-sm gap-2"
+              >
+                <img src="/asset/qrdashbor.svg" />
+                Dashboard
+              </a>
+            </li>
+
+            <li>
+              <a
+                href="#"
+                class="flex items-center px-4 py-3 text-slate-400 hover:bg-slate-900 rounded-lg text-sm gap-3"
+              >
+                <img src="/asset/kardus.svg" />
+                Produk
+              </a>
+            </li>
+
+            <li>
+              <a
+                href="#"
+                class="flex items-center px-4 py-3 text-slate-400 hover:bg-slate-900 rounded-lg text-sm gap-2"
+              >
+                <img src="/asset/keranjang.svg" />
+
+                Pesanan
+              </a>
+            </li>
+
+            <li>
+              <a
+                href="#"
+                class="flex items-center px-4 py-3 text-slate-400 hover:bg-slate-900 rounded-lg text-sm gap-2"
+              >
+                <img src="/asset/2org.svg" />
+                Pelanggan
+              </a>
+            </li>
+
+            <li>
+              <a
+                href="#"
+                class="flex items-center px-4 py-3 text-slate-400 hover:bg-slate-900 rounded-lg text-sm gap-2"
+              >
+                <img src="/asset/settingg.svg" />
+                Pengaturan
+              </a>
+            </li>
+          </ul>
+        </nav>
+
+        <div class="p-5 border-t border-slate-800 text-sm text-slate-400">
+          Kembali ke Toko
+        </div>
+      </aside>
+
+      <!-- CONTENT -->
+      <main class="flex-1">
+        <!-- HEADER -->
+        <header
+          class="h-16 bg-white border-b px-8 flex items-center justify-between"
+        >
+          <p class="text-sm text-slate-500">Admin</p>
+
+          <div class="flex items-center gap-5">
+            <div class="relative">
+              🔔
+              <span
+                class="absolute -top-1 -right-1 w-2 h-2 bg-red-500 rounded-full"
+              ></span>
+            </div>
+
+            <div class="flex items-center gap-2">
+              <div
+                class="w-8 h-8 rounded-full bg-blue-100 flex items-center justify-center text-xs"
+              >
+                A
+              </div>
+
+              <span class="text-sm"> Admin </span>
+            </div>
+          </div>
+        </header>
+
+        <!-- MAIN -->
+        <div class="p-8">
+          <!-- TITLE -->
+          <div class="mb-6">
+            <h2 class="text-2xl font-semibold">Dashboard</h2>
+
+            <p class="text-slate-500 text-sm">
+              Selamat datang kembali. Ini ringkasan bisnis hari ini.
+            </p>
+          </div>
+
+          <!-- STATISTIC -->
+          <div class="grid grid-cols-4 gap-5 mb-6">
+            <div class="bg-white border rounded-xl p-5">
+              <div class="flex justify-between">
+                <div>
+                  <p class="text-xs text-slate-500">Total Pendapatan</p>
+                </div>
+                <div
+                  class="bg-blue-100 rounded-xl w-10 h-10 flex justify-center items-center"
+                >
+                  <img src="/asset/kenaikan.svg" />
+                </div>
+              </div>
+
+              <h3 class="text-2xl font-bold mt-3">Rp 125.000.000</h3>
+
+              <p class="text-green-500 text-xs mt-2">↑ 18.2% dari bulan lalu</p>
+            </div>
+
+            <div class="bg-white border rounded-xl p-5">
+              <div class="flex justify-between">
+                <div>
+                  <p class="text-xs text-slate-500">Pesanan Baru</p>
+                </div>
+                <div
+                  class="bg-blue-100 rounded-xl w-10 h-10 flex justify-center items-center"
+                >
+                  <img src="/asset/keranjang.svg" />
+                </div>
+              </div>
+
+              <h3 class="text-2xl font-bold mt-3">890</h3>
+
+              <p class="text-green-500 text-xs mt-2">↑ 12.5% dari bulan lalu</p>
+            </div>
+
+            <div class="bg-white border rounded-xl p-5">
+              <div class="flex justify-between">
+                <div>
+                  <p class="text-xs text-slate-500">Pelanggan Aktif</p>
+                </div>
+                <div
+                  class="bg-blue-100 rounded-xl w-10 h-10 flex justify-center items-center"
+                >
+                  <img src="/asset/2org.svg" />
+                </div>
+              </div>
+
+              <h3 class="text-2xl font-bold mt-3">3.284</h3>
+
+              <p class="text-green-500 text-xs mt-2">↑ 8.1% dari bulan lalu</p>
+            </div>
+
+            <div class="bg-white border rounded-xl p-5">
+              <div class="flex justify-between">
+                <div>
+                  <p class="text-xs text-slate-500">Produk Aktif</p>
+                </div>
+                <div
+                  class="bg-blue-100 rounded-xl w-10 h-10 flex justify-center items-center"
+                >
+                  <img src="/asset/kenaikan.svg" />
+                </div>
+              </div>
+
+              <h3 class="text-2xl font-bold mt-3">247</h3>
+
+              <p class="text-red-500 text-xs mt-2">↓ 2.3% dari bulan lalu</p>
+            </div>
+          </div>
+
+          <!-- CHART -->
+          <div class="grid grid-cols-3 gap-5 mb-6">
+            <!-- LINE CHART -->
+            <div class="col-span-2 bg-white border rounded-xl p-5">
+              <div class="flex justify-between items-center mb-4">
+                <h3 class="font-medium">Pendapatan & Pesanan (2026)</h3>
+
+                <button class="border rounded px-3 py-1 text-xs">
+                  12 Bulan Terakhir
+                </button>
+              </div>
+
+              <!-- TEMPAT GAMBAR -->
+              <div
+                class="h-80 rounded-lg flex items-center justify-center text-slate-400"
+              >
+                <img src="/asset/grafik.svg" />
+              </div>
+            </div>
+
+            <!-- DONUT -->
+            <div class="bg-white border rounded-xl p-5">
+              <h3 class="font-medium mb-5">Penjualan per Kategori</h3>
+
+              <div
+                class="h-52 rounded-lg flex items-center justify-center text-slate-400 mb-5"
+              >
+                <img src="/asset/donutchart.svg" />
+              </div>
+
+              <div class="space-y-3 text-sm">
+                <div class="flex justify-between">
+                  <span>Elektronik</span>
+                  <span>45%</span>
+                </div>
+
+                <div class="flex justify-between">
+                  <span>Fashion</span>
+                  <span>28%</span>
+                </div>
+
+                <div class="flex justify-between">
+                  <span>Rumah & Dapur</span>
+                  <span>15%</span>
+                </div>
+
+                <div class="flex justify-between">
+                  <span>Kecantikan</span>
+                  <span>8%</span>
+                </div>
+
+                <div class="flex justify-between">
+                  <span>Lainnya</span>
+                  <span>4%</span>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- TABLE -->
+          <div class="grid grid-cols-2 gap-5">
+            <!-- ORDER -->
+            <div class="bg-white rounded-xl border border-gray-200 p-5">
+              <div class="flex justify-between items-center mb-5">
+                <h3 class="text-xl font-medium">Pesanan Terbaru</h3>
+
+                <a href="#" class="text-blue-500 text-sm"> Lihat Semua ↗ </a>
+              </div>
+
+              <div class="space-y-0">
+                <div class="flex justify-between py-3 border-b border-gray-100">
+                  <div>
+                    <div class="flex items-center gap-2">
+                      <span class="text-xs font-semibold"> #BM98765432 </span>
+
+                      <span class="text-[11px] text-green-500"> Terkirim </span>
+                    </div>
+
+                    <p class="text-xs text-gray-500 mt-1">
+                      Budi Santoso • 28 Mei 2026
+                    </p>
+                  </div>
+
+                  <div class="text-right">
+                    <p class="text-xs text-blue-500">Rp 900.000</p>
+
+                    <p class="text-xs text-gray-400">2 item</p>
+                  </div>
+                </div>
+              </div>
+
+              <div class="space-y-0">
+                <div class="flex justify-between py-3 border-b border-gray-100">
+                  <div>
+                    <div class="flex items-center gap-2">
+                      <span class="text-xs font-semibold"> #BM87654321 </span>
+
+                      <span class="text-[11px] text-green-500"> Dikirim </span>
+                    </div>
+
+                    <p class="text-xs text-gray-500 mt-1">
+                     Siti Rahayu · 28 Mei 2026
+                    </p>
+                  </div>
+
+                  <div class="text-right">
+                    <p class="text-xs text-blue-500">Rp 450.000</p>
+
+                    <p class="text-xs text-gray-400">1 item</p>
+                  </div>
+                </div>
+              </div>
+
+              <div class="space-y-0">
+                <div class="flex justify-between py-3 border-b border-gray-100">
+                  <div>
+                    <div class="flex items-center gap-2">
+                      <span class="text-xs font-semibold"> #BM76543210</span>
+
+                      <span class="text-[11px] text-green-500"> DiKemas </span>
+                    </div>
+
+                    <p class="text-xs text-gray-500 mt-1">
+                      Ahmad Maulana · 27 Mei 2026
+                    </p>
+                  </div>
+
+                  <div class="text-right">
+                    <p class="text-xs text-blue-500">Rp 1.250.000</p>
+
+                    <p class="text-xs text-gray-400">3 item</p>
+                  </div>
+                </div>
+              </div>
+              <div class="space-y-0">
+                <div class="flex justify-between py-3 border-b border-gray-100">
+                  <div>
+                    <div class="flex items-center gap-2">
+                      <span class="text-xs font-semibold"> #BM65432109 </span>
+
+                      <span class="text-[11px] text-green-500"> Pending </span>
+                    </div>
+
+                    <p class="text-xs text-gray-500 mt-1">
+                      Rina Kusuma · 27 Mei 2026
+                    </p>
+                  </div>
+
+                  <div class="text-right">
+                    <p class="text-xs text-blue-500">Rp 8.500.000</p>
+
+                    <p class="text-xs text-gray-400">1 item</p>
+                  </div>
+                </div>
+              </div>
+              <div class="space-y-0">
+                <div class="flex justify-between py-3 border-b border-gray-100">
+                  <div>
+                    <div class="flex items-center gap-2">
+                      <span class="text-xs font-semibold"> #BM54321098</span>
+
+                      <span class="text-[11px] text-green-500"> Terkirim </span>
+                    </div>
+
+                    <p class="text-xs text-gray-500 mt-1">
+                      Denny Pratama · 26 Mei 2026
+                    </p>
+                  </div>
+
+                  <div class="text-right">
+                    <p class="text-xs text-blue-500">Rp 725.000</p>
+
+                    <p class="text-xs text-gray-400">2 item</p>
+                  </div>
+                </div>
+              </div>
+              
+            </div>
+
+            <!-- PRODUCT -->
+            <div class="bg-white border rounded-xl p-5">
+              <h3 class="font-medium mb-5">Produk Terlaris</h3>
+
+              <div
+                class="flex justify-between items-start py-3 border-b border-gray-100"
+              >
+                <div class="flex gap-4">
+                  <span class="text-xs text-gray-400"> 1 </span>
+
+                  <div>
+                    <p class="text-xs text-gray-700">
+                      Headphone Wireless Premium
+                    </p>
+
+                    <p class="text-xs text-gray-400">156 terjual • Stok: 45</p>
+                  </div>
+                </div>
+
+                <p class="text-xs text-blue-500">Rp 70.200.000</p>
+              </div>
+
+              <div
+                class="flex justify-between items-start py-3 border-b border-gray-100"
+              >
+                <div class="flex gap-4">
+                  <span class="text-xs text-gray-400"> 2 </span>
+
+                  <div>
+                    <p class="text-xs text-gray-700">
+                      Laptop Ultrabook Pro 15"
+                    </p>
+
+                    <p class="text-xs text-gray-400">87 terjual · Stok: 15</p>
+                  </div>
+                </div>
+
+                <p class="text-xs text-blue-500">Rp 739.500.000</p>
+              </div>
+
+              <div
+                class="flex justify-between items-start py-3 border-b border-gray-100"
+              >
+                <div class="flex gap-4">
+                  <span class="text-xs text-gray-400"> 3 </span>
+
+                  <div>
+                    <p class="text-xs text-gray-700">
+                      Kaos Polos Premium Cotton
+                    </p>
+
+                    <p class="text-xs text-gray-400">312 terjual · Stok: 200</p>
+                  </div>
+                </div>
+
+                <p class="text-xs text-blue-500">Rp 39.000.000</p>
+              </div>
+
+              <div
+                class="flex justify-between items-start py-3 border-b border-gray-100"
+              >
+                <div class="flex gap-4">
+                  <span class="text-xs text-gray-400"> 4</span>
+
+                  <div>
+                    <p class="text-xs text-gray-700">
+                      Sneakers Sport Runfast
+                    </p>
+
+                    <p class="text-xs text-gray-400">203 terjual · Stok: 60</p>
+                  </div>
+                </div>
+
+                <p class="text-xs text-blue-500">Rp 111.650.000</p>
+              </div>
+
+              <div
+                class="flex justify-between items-start py-3 border-b border-gray-100"
+              >
+                <div class="flex gap-4">
+                  <span class="text-xs text-gray-400"> 5 </span>
+
+                  <div>
+                    <p class="text-xs text-gray-700">
+                      Smartphone 5G Ultra
+                    </p>
+
+                    <p class="text-xs text-gray-400">124 terjual · Stok: 30</p>
+                  </div>
+                </div>
+
+                <p class="text-xs text-blue-500">Rp 520.800.000</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </main>
+    </div>
+  </body>
+</html>
